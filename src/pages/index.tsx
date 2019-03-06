@@ -1,37 +1,23 @@
-import { graphql } from "gatsby";
-import * as React from "react";
+import React from "react";
+import Hero from "../components/hero";
+import "../App.scss";
+import WhatWeDo from "../components/what-we-do";
+import HowWeDoIt from "../components/how-we-do-it";
+import ElixirCallout from "../components/elixir-callout";
+import GraphQLCallout from "../components/graphql-callout";
+import ReactCallout from "../components/react-callout";
+import Footer from "../components/footer";
 
-interface IndexPageProps {
-  data: {
-    site: {
-      siteMetadata: {
-        name: string;
-        tagline: string;
-      };
-    };
-  };
-}
+export default () => (
+  <div className="homepage">
+    <Hero />
 
-export const indexPageQuery = graphql`
-  query IndexPageQuery {
-    site {
-      siteMetadata {
-        name
-        tagline
-      }
-    }
-  }
-`;
+    <WhatWeDo />
+    <HowWeDoIt />
+    <ElixirCallout />
+    <GraphQLCallout />
+    <ReactCallout />
 
-export default class IndexPage extends React.Component<IndexPageProps, {}> {
-  public render() {
-    const { name, tagline } = this.props.data.site.siteMetadata;
-
-    return (
-      <div className="container">
-        <h1>{name}</h1>
-        <p>{tagline}</p>
-      </div>
-    );
-  }
-}
+    <Footer />
+  </div>
+);
