@@ -1,8 +1,9 @@
-import React from "react"
-import PrimaryHeader from "../primary-header"
-import Article from "../article"
+import React from "react";
+import PrimaryHeader from "../components/primary-header";
+import Article from "../components/article";
+import Footer from "../components/footer";
 
-export default props => (
+export default () => (
   <div className="careers">
     <PrimaryHeader internal />
 
@@ -97,6 +98,7 @@ export default props => (
           inclusive and supportive technical community.
         </p>
       </Article>
+    {/* <Footer /> */}
     </div>
   </div>
-)
+);

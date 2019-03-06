@@ -1,7 +1,7 @@
-import React from "react"
-import PrimaryHeader from "./primary-header"
+import React from "react";
+import PrimaryHeader from "./primary-header";
 
-export default props => (
+export default () => (
   <div className="hero">
     <PrimaryHeader />
 
@@ -20,4 +20,4 @@ export default props => (
       </article>
     </div>
   </div>
-)
+);

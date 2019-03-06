@@ -1,6 +1,6 @@
 // Most things depend on bourbon and neat, so grab them here
-@import "bourbon";
-@import "neat";
+@import "../node_modules/bourbon/core/bourbon";
+@import "../node_modules/bourbon-neat/core/neat";
 
 // Observe ITCSS
 // https://speakerdeck.com/dafed/managing-css-projects-with-itcss

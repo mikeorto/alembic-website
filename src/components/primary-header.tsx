@@ -1,19 +1,12 @@
-import React from "react"
-import { Link } from "react-router-dom"
-import logo from "../assets/images/alembic-logo.svg"
+import React from "react";
+import { Link } from "gatsby";
+import logo from "../assets/images/alembic-logo.svg";
 
-import classnames from "classnames"
-
-export default ({ internal }) => {
-  const className = classnames({
-    "primary-header": true,
-    internal: internal,
-  })
-
+export default ({internal}: {internal?: boolean}) => {
   return (
-    <div className={className}>
+    <div className={`primary-header ${internal ? "internal" : ""}`}>
       <div className="wrap">
-        <Link to="/">
+        <Link to="/home">
           <img src={logo} alt="Alembic Pty Ltd" width="162" height="24" />
         </Link>
 
@@ -34,5 +27,5 @@ export default ({ internal }) => {
         </nav>
       </div>
     </div>
-  )
-}
+  );
+};
