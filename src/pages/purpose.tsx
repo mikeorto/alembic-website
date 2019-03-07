@@ -1,11 +1,14 @@
 import React from "react"
 import Layout from "../components/layout/layout"
+import Article from "../components/article"
 import PurposeContent from "../content/purpose.mdx"
 
 import "../App.scss"
 
 export default () => (
   <Layout name="purpose">
-    <PurposeContent />
+    <Article>
+      <PurposeContent />
+    </Article>
   </Layout>
 )
