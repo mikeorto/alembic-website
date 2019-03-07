@@ -22,6 +22,8 @@
     "react-helmet": "^5.2.0"
   },
   "devDependencies": {
+    "@types/react": "^16.8.7",
+    "@types/react-dom": "^16.8.2",
     "bourbon": "^5.1.0",
     "bourbon-neat": "^3.0.1",
     "gatsby-plugin-tslint": "^0.0.1",

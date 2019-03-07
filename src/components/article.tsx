@@ -1,5 +1,5 @@
-import React from "react"
+import React, { ReactNode } from "react"
 
-export default ({ children }: { children: any }) => (
+export default ({ children }: { children: ReactNode }) => (
   <article className="article">{children}</article>
 )
