@@ -1,20 +1,11 @@
 import React from "react"
-import PrimaryHeader from "../components/primary-header"
-import Article from "../components/article"
-import Footer from "../components/footer"
+import Layout from "../components/layout/layout"
 import PurposeContent from "../content/purpose.mdx"
+
 import "../App.scss"
 
-
 export default () => (
-  <div className="purpose">
-    <PrimaryHeader internal={true} />
-
-    <div className="wrap">
-      <Article>
-        <PurposeContent />
-      </Article>
-      <Footer />
-    </div>
-  </div>
+  <Layout name="purpose">
+    <PurposeContent />
+  </Layout>
 )
