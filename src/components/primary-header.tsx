@@ -1,8 +1,8 @@
-import React from "react";
-import { Link } from "gatsby";
-import logo from "../assets/images/alembic-logo.svg";
+import React from "react"
+import { Link } from "gatsby"
+import logo from "../assets/images/alembic-logo.svg"
 
-export default ({internal}: {internal?: boolean}) => {
+export default ({ internal }: { internal?: boolean }) => {
   return (
     <div className={`primary-header ${internal ? "internal" : ""}`}>
       <div className="wrap">
@@ -27,5 +27,5 @@ export default ({internal}: {internal?: boolean}) => {
         </nav>
       </div>
     </div>
-  );
-};
+  )
+}

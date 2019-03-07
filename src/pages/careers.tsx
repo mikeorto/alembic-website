@@ -6,7 +6,7 @@ import CareersContent from "../content/careers.mdx"
 
 export default () => (
   <div className="careers">
-    <PrimaryHeader internal />
+    <PrimaryHeader internal={true} />
 
     <div className="wrap">
       <Article>

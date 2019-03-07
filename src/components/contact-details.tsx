@@ -6,8 +6,8 @@ export default () => (
       <article>
         <h1>Contact Us</h1>
         <h2>
-          Get in touch with us to discuss your software engineering needs.
-          We'd absolutely love to talk.
+          Get in touch with us to discuss your software engineering needs. We'd
+          absolutely love to talk.
         </h2>
 
         <p className="phone">
