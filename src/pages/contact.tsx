@@ -7,6 +7,6 @@ export default ({ children }) => (
   <div className="contact">
     <PrimaryHeader internal />
     <ContactDetails />
-    {/* <Footer /> */}
+    <Footer />
   </div>
 );
