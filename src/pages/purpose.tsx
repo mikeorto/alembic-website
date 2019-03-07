@@ -3,6 +3,8 @@ import PrimaryHeader from "../components/primary-header"
 import Article from "../components/article"
 import Footer from "../components/footer"
 import PurposeContent from "../content/purpose.mdx"
+import "../App.scss"
+
 
 export default () => (
   <div className="purpose">
