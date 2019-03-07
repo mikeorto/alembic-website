@@ -19,9 +19,7 @@
     "gatsby-plugin-typescript": "^2.0.10",
     "react": "^16.8.3",
     "react-dom": "^16.8.3",
-    "react-helmet": "^5.2.0",
-    "typescript": "^3.3.3333",
-    "webpack": "^4.29.6"
+    "react-helmet": "^5.2.0"
   },
   "devDependencies": {
     "bourbon": "^5.1.0",
@@ -31,6 +29,8 @@
     "tslint": "^5.13.1",
     "tslint-config-prettier": "^1.18.0",
     "tslint-loader": "^3.5.4",
-    "tslint-react": "^3.6.0"
+    "tslint-react": "^3.6.0",
+    "typescript": "^3.3.3333",
+    "webpack": "^4.29.6"
   }
 }
