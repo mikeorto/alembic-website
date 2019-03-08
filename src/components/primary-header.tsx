@@ -1,10 +1,16 @@
 import React from "react"
 import { Link } from "gatsby"
 import logo from "../assets/images/alembic-logo.svg"
+import classname from "classnames"
 
 export default ({ internal }: { internal?: boolean }) => {
+  const divStyle = classname({
+    "primary-header": true,
+    internal: true ? "internal" : "",
+  })
+
   return (
-    <div className={`primary-header ${internal ? "internal" : ""}`}>
+    <div className={divStyle}>
       <div className="wrap">
         <Link to="/">
           <img src={logo} alt="Alembic Pty Ltd" width="162" height="24" />
