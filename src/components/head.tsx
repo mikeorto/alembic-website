@@ -20,7 +20,7 @@ export default () => (
     />
 
     <title>
-      Alembic - GraphQL and Elixir Software Development &amp; Consulting
+      Alembic
     </title>
     <link rel="canonical" href="https://alembic.com.au/" />
     <meta property="og:type" content="website" />
