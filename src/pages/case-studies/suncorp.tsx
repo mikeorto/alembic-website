@@ -6,7 +6,7 @@ import Suncorp from "../../content/case-studies/suncorp.mdx";
 import "../../App.scss"
 
 export default () => (
-  <Layout name="">
+  <Layout>
     <Article>
       <Suncorp />
     </Article>

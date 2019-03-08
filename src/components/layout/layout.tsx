@@ -4,7 +4,7 @@ import Head from "../../components/head"
 import Footer from "../footer"
 import "../../App.scss"
 
-export default ({ name, children }: { name: string; children: ReactNode }) => (
+export default ({ name, children }: { name?: string; children: ReactNode }) => (
   <div className={name}>
     <Head />
     <PrimaryHeader internal={true} />

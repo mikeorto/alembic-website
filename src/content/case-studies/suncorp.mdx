@@ -1,5 +1,4 @@
 ## GraphQL API Strategy and Implementation
-<br />
 
 ### The challenge
 
@@ -8,7 +7,6 @@ A Brisbane-based Australian finance, insurance and banking corporation, one of A
 Their requirements were to ensure all APIs uniformly followed company standards, and for the API catalogue to be perpetually current, facilitating better coordination between API producers and consumers.
 
 Alembic was briefed to design and implement a centralised publishing hub that stored the latest version of internal APIs. This was to include documentation and health checks, ensure that all APIs conformed to JSON API standards and specific localised constraints, and list backwards compatibility breakages. 
-<br />
 
 ### The solution
 
@@ -19,7 +17,6 @@ Vendor software and services were evaluated and SwaggerHub was selected as the A
 The solution is a server component that receives web hooks from the client’s internal Bitbucket source control system whenever a connected API project pushes new changes. On receiving notification of a change the system runs a suite of checks against the changed Swagger files and records the results in a database. In addition, the server component checks the Swagger file for backwards compatibility changes.
 
 The front end of the API publishing tool is a React application that connects to the server component via a GraphQL API. It lists the entire APIs in summary form with problem counts and backwards compatibility status and provides the ability to drill down into the details of any issues found. In addition it provides a place to view up-to-date API documentation, the ability to download Swagger files and links back to the origin source repositories.
-<br />
 
 ### Outcomes
 
@@ -36,7 +33,5 @@ The fully-automated version of the API Publishing Tool is now in production use.
 - Always up-to-date company-wide API catalogue tightly integrated with VCS (Bitbucket)
 - Centralised location to find up-to-date documentation for all APIs
 - Reports on API backwards compatibility breakages.
-<br />
-<br />
 
 [Back to Case Studies](/case-studies)

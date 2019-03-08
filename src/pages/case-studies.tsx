@@ -1,18 +1,24 @@
 import React from "react"
 import Layout from "../components/layout/layout"
-import Article from "../components/article"
 import { Link } from "gatsby"
+import suncorp from "../assets/images/suncorp-logo.png"
 
 import "../App.scss"
 
 export default () => (
-  <Layout name="purpose">
-    <Article>
+  <Layout>
+    <div className="case-studies">
+      <h2>Case Studies</h2>
       <ul>
         <li>
-          <Link to="/case-studies/suncorp">Suncorp</Link>
+          <h3>
+            <Link to="/case-studies/suncorp">
+              <img src={suncorp} alt="Suncorp" width="125" height="auto" />
+              <p>GraphQL API Strategy and Implementation</p>
+            </Link>
+          </h3>
         </li>
       </ul>
-    </Article>
+    </div>
   </Layout>
 )
