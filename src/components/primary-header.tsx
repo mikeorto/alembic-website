@@ -13,13 +13,14 @@ export default ({ internal }: { internal?: boolean }) => {
         <nav>
           <ul>
             <li>
+              <Link to="/case-studies">Case Studies</Link>
+            </li>
+            <li>
               <Link to="/careers">Careers</Link>
             </li>
-
             <li>
               <Link to="/purpose">Purpose</Link>
             </li>
-
             <li>
               <Link to="/contact">Contact</Link>
             </li>
