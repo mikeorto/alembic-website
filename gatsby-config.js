@@ -9,6 +9,5 @@ module.exports = {
     `gatsby-plugin-tslint`,
     `gatsby-mdx`,
     `gatsby-plugin-react-helmet`,
-    `gatsby-plugin-favicon`
   ],
 }
