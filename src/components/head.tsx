@@ -15,13 +15,11 @@ export default () => (
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
     <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png" />
     <link
-      href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700|Playfair+Display:400,700"
+      href="https://fonts.googleapis.com/css?family=Open+Sans:400,700|Playfair+Display:400,700"
       rel="preload"
     />
 
-    <title>
-      Alembic
-    </title>
+    <title>Alembic</title>
     <link rel="canonical" href="https://alembic.com.au/" />
     <meta property="og:type" content="website" />
     <meta

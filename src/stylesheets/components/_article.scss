@@ -28,7 +28,7 @@ article.article {
     font-variant-caps: all-small-caps;
     margin-top: 25px;
     margin-bottom: 5px;
-    color: gray;
+    color: $light-grey;
   }
 
   p,
@@ -37,5 +37,4 @@ article.article {
     line-height: 28px;
     padding: 10px 0;
   }
-
 }
