@@ -12,7 +12,7 @@ import Footer from "../components/footer"
 
 export default () => (
   <div className="homepage">
-    <Head />>
+    <Head />
     <Hero />
     <WhatWeDo />
     <HowWeDoIt />
