@@ -12,26 +12,30 @@ article.article {
   h1 {
     font-size: 52px;
     font-weight: 700;
-    margin-bottom: 25px;
+    margin-bottom: 35px;
     max-width: 80%;
   }
 
   h2 {
     font-size: 40px;
     font-weight: 700;
-    margin-top: 35px;
-    margin-bottom: 15px;
+    margin: 25px 0;
   }
 
-  p {
+  h3 {
+    font-size: 24px;
+    font-weight: 400;
+    font-variant-caps: all-small-caps;
+    margin-top: 25px;
+    margin-bottom: 5px;
+    color: gray;
+  }
+
+  p,
+  ul {
     font-size: 16px;
     line-height: 28px;
     padding: 10px 0;
-    max-width: 80%;
   }
 
-  ul {
-    padding: 10px 0;
-    margin-left: 60px;
-  }
 }
