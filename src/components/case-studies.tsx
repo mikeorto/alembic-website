@@ -5,7 +5,7 @@ import elixir from "../assets/images/elixir.svg"
 import graphql from "../assets/images/graphql.svg"
 import react from "../assets/images/react.svg"
 
-export default props => (
+export default () => (
   <div className="how-we-do-it wrap">
     <aside>
       <h2 className="line">

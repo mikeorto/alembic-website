@@ -1,7 +1,7 @@
 import React from "react"
 import logo from "../assets/images/alembic-logo.svg"
 
-export default props => (
+export default () => (
   <footer className="footer">
     <p>
       <img src={logo} alt="Alembic" width="150" />
