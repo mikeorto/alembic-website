@@ -16,7 +16,7 @@ export default () => (
     <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png" />
     <link
       href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700|Playfair+Display:400,700"
-      rel="stylesheet"
+      rel="preload"
     />
 
     <title>
