@@ -6,7 +6,7 @@ import classname from "classnames"
 export default ({ internal }: { internal?: boolean }) => {
   const divStyle = classname({
     "primary-header": true,
-    internal: true ? "internal" : "",
+    internal: ( internal ? "internal" : "" )
   })
 
   return (
