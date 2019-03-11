@@ -10,11 +10,6 @@ export default () => (
     />
     <meta name="theme-color" content="#000000" />
 
-    <link
-      href="https://fonts.googleapis.com/css?family=Open+Sans:400,700|Playfair+Display:400,700"
-      rel="preload"
-      as="font"
-    />
     <link rel="shortcut icon" href="/favicon.ico" />
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
