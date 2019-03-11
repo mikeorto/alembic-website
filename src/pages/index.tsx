@@ -1,4 +1,5 @@
 import React from "react"
+import { graphql } from "gatsby"
 import Hero from "../components/hero"
 import Head from "../components/head"
 
@@ -22,3 +23,4 @@ export default () => (
     <Footer />
   </div>
 )
+
