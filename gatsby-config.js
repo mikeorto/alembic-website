@@ -7,12 +7,20 @@ module.exports = {
     {
       resolve: `gatsby-source-filesystem`,
       options: {
+        path: `${__dirname}/src/data`,
+        name: 'data',
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
         path: `${__dirname}/src/assets/team`,
         name: 'images',
       },
     },
-    'gatsby-transformer-sharp',
-    'gatsby-plugin-sharp',
+    `gatsby-transformer-yaml`,
+    `gatsby-transformer-sharp`,
+    `gatsby-plugin-sharp`,
     `gatsby-plugin-sass`,
     `gatsby-plugin-typescript`,
     `gatsby-plugin-tslint`,

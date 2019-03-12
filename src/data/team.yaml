@@ -1,0 +1,9 @@
+- id: josh
+  name: Josh Price
+  bio: Founder @ Alembic
+  twitter: "@joshprice"
+
+- id: ryan
+  name: Ryan Sickle
+  bio: blah
+  twitter: "@thisguy"
