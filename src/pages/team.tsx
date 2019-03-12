@@ -2,37 +2,20 @@ import React from "react"
 import { graphql } from "gatsby"
 import Img from "gatsby-image"
 import Layout from "../components/layout/layout"
-import will from "../assets/team/will.jpg"
-import ryan from "../assets/team/ryan.jpg"
-import esdras from "../assets/team/esdras.jpg"
-
 import "../App.scss"
 
-const teamMembers = [
-  {
-    name: "Will",
-    profilePic: will,
-  },
-  {
-    name: "Ryan",
-    profilePic: ryan,
-  },
-  {
-    name: "Esdras",
-    profilePic: esdras,
-  },
-]
-
-export default (props: any) => {
-  const members = Object.keys(props.data)
+export default ({ data }: { data: Object }) => {
+  const members = Object.values(data)
   return (
     <Layout>
-      <div className="case-studies">
+      <div className="team">
         <h2>Alembic Team</h2>
         <ul>
           {members.map(member => (
             <li>
-              <Img fluid={props.data[member].childImageSharp.fluid} />
+              <Img
+                fluid={member.childImageSharp.fluid}
+              />
             </li>
           ))}
         </ul>
@@ -44,24 +27,22 @@ export default (props: any) => {
 export const pageQuery = graphql`
   query {
     will: file(relativePath: { eq: "will.jpg" }) {
-      childImageSharp {
-        fluid(maxWidth: 1000) {
-          ...GatsbyImageSharpFluid
-        }
-      }
+      ...fluidImage
     }
     ryan: file(relativePath: { eq: "ryan.jpg" }) {
-      childImageSharp {
-        fluid(maxWidth: 1000) {
-          ...GatsbyImageSharpFluid
-        }
-      }
+      ...fluidImage
     }
     esdras: file(relativePath: { eq: "esdras.jpg" }) {
-      childImageSharp {
-        fluid(maxWidth: 1000) {
-          ...GatsbyImageSharpFluid
-        }
+      ...fluidImage
+    }
+  }
+`
+
+export const fluidImage = graphql`
+  fragment fluidImage on File {
+    childImageSharp {
+      fluid(maxWidth: 1000) {
+        ...GatsbyImageSharpFluid_withWebp
       }
     }
   }

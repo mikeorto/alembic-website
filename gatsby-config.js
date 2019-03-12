@@ -3,8 +3,7 @@ module.exports = {
     name: `Alembic`,
     tagline: `Alembic website`,
   },
-  plugins: [
-    {
+  plugins: [{
       resolve: `gatsby-source-filesystem`,
       options: {
         path: `${__dirname}/src/data`,
