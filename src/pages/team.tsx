@@ -4,20 +4,30 @@ import Img from "gatsby-image"
 import Layout from "../components/layout/layout"
 import "../App.scss"
 
-export default ({ data }: { data: Object }) => {
-  const members = Object.values(data)
+export default ({
+  data: {
+    allTeamYaml: { edges: members },
+    allFile: { edges: images },
+  },
+}: {
+  data: object
+}) => {
   return (
     <Layout>
       <div className="team">
         <h2>Alembic Team</h2>
         <ul>
-          {members.map(member => (
-            <li>
-              <Img
-                fluid={member.childImageSharp.fluid}
-              />
-            </li>
-          ))}
+          {members.map((member: any, index: number) => {
+            const image = images.find(i => i.node.name === member.node.id)
+            return (
+              <li key={index}>
+                <h3>{member.node.name}</h3>
+                <Img fluid={image.node.childImageSharp.fluid} key={index} />
+                <h3>Bio:</h3> 
+                <h4>{member.node.bio}</h4>
+              </li>
+            )
+          })}
         </ul>
       </div>
     </Layout>
@@ -26,23 +36,25 @@ export default ({ data }: { data: Object }) => {
 
 export const pageQuery = graphql`
   query {
-    will: file(relativePath: { eq: "will.jpg" }) {
-      ...fluidImage
+    allTeamYaml {
+      edges {
+        node {
+          id
+          name
+          bio
+        }
+      }
     }
-    ryan: file(relativePath: { eq: "ryan.jpg" }) {
-      ...fluidImage
-    }
-    esdras: file(relativePath: { eq: "esdras.jpg" }) {
-      ...fluidImage
-    }
-  }
-`
-
-export const fluidImage = graphql`
-  fragment fluidImage on File {
-    childImageSharp {
-      fluid(maxWidth: 1000) {
-        ...GatsbyImageSharpFluid_withWebp
+    allFile {
+      edges {
+        node {
+          name
+          childImageSharp {
+            fluid(maxWidth: 1000) {
+              ...GatsbyImageSharpFluid_withWebp
+            }
+          }
+        }
       }
     }
   }

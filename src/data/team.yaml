@@ -1,9 +1,17 @@
-- id: josh
-  name: Josh Price
-  bio: Founder @ Alembic
-  twitter: "@joshprice"
+- id: will
+  name: Will
+  bio: blah blah blah will
+  twitter: "@will"
+  avatarPath: "../assets/team/will.jpg"
 
 - id: ryan
-  name: Ryan Sickle
-  bio: blah
+  name: Ryan
+  bio: blah blah blah ryan
   twitter: "@thisguy"
+  avatarPath: "../assets/team/ryan.jpg"
+
+- id: esdras
+  name: Esdras
+  bio: blah blah blah esdras
+  twitter: "@esdras"
+  avatarPath: "../assets/team/esdras.jpg"
