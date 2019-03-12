@@ -1,3 +1,4 @@
+
 - id: will
   name: Will
   bio: blah blah blah will
@@ -15,3 +16,8 @@
   bio: blah blah blah esdras
   twitter: "@esdras"
   avatarPath: "../assets/team/esdras.jpg"
+
+- id: josh
+  name: Josh
+  bio: blah blah blah josh
+  twitter: "@josh"

@@ -9,8 +9,6 @@ export default ({
     allTeamYaml: { edges: members },
     allFile: { edges: images },
   },
-}: {
-  data: object
 }) => {
   return (
     <Layout>
@@ -22,8 +20,10 @@ export default ({
             return (
               <li key={index}>
                 <h3>{member.node.name}</h3>
-                <Img fluid={image.node.childImageSharp.fluid} key={index} />
-                <h3>Bio:</h3> 
+                {image ? (
+                  <Img fluid={image.node.childImageSharp.fluid} key={index} />
+                ) : null}
+                <h3>Bio:</h3>
                 <h4>{member.node.bio}</h4>
               </li>
             )
