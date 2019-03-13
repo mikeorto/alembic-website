@@ -14,6 +14,9 @@ export default () => (
             description
             url
             image
+            social {
+              twitter
+            }
           }
         }
       }
@@ -57,7 +60,7 @@ export default () => (
         />
         <meta property="og:url" content={data.site.siteMetadata.url} />
         <meta property="og:image" content={data.site.siteMetadata.image} />
-        <meta property="og:site_name" content="Alembic" />
+        <meta property="og:site_name" content={data.site.siteMetadata.name} />
         <meta name="twitter:card" content="summary" />
         <meta name="twitter:image" content={data.site.siteMetadata.image} />
         <meta name="twitter:title" content={data.site.siteMetadata.title} />
@@ -65,8 +68,8 @@ export default () => (
           name="twitter:description"
           content={data.site.siteMetadata.description}
         />
-        <meta name="twitter:site" content="@team_alembic" />
-        <meta name="twitter:creator" content="@team_alembic" />
+        <meta name="twitter:site" content={data.site.siteMetadata.social.twitter} />
+        <meta name="twitter:creator" content={data.site.siteMetadata.social.twitter} />
         <script type="application/ld+json">
           {`{
         "@context": "http://schema.org",

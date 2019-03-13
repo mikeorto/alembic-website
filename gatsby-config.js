@@ -6,6 +6,9 @@ module.exports = {
     description: `A Sydney-based Software Development Consultancy building cutting edge Web and API experiences with Elixir, GraphQL and React.`,
     url: `https://alembic.com.au/`,
     image: `https://alembic.com.au/alembic-logo.png`,
+    social: {
+      twitter: `@team_alembic`
+    },
     menuLinks: [{
         name: 'Case Studies',
         link: '/case-studies'
