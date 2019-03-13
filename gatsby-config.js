@@ -61,7 +61,7 @@ module.exports = {
     {
       resolve: 'gatsby-plugin-favicons',
       options: {
-        logo: './src/assets/images/alembic-logo.svg',
+        logo: './src/assets/images/alembic-logo.png',
         title: 'Alembic',
         options: {
           android: true,
