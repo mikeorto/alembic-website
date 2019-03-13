@@ -1,60 +1,80 @@
 import React, { ReactNode } from "react"
 import Helmet from "react-helmet"
+import { StaticQuery, graphql } from "gatsby"
 
 export default () => (
-  <Helmet>
-    <meta charSet="utf-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, shrink-to-fit=no"
-    />
-    <meta name="theme-color" content="#000000" />
+  <StaticQuery
+    query={graphql`
+      query {
+        site {
+          siteMetadata {
+            name
+            tagline
+            title
+            description
+            url
+            image
+          }
+        }
+      }
+    `}
+    render={data => (
+      <Helmet>
+        <meta charSet="utf-8" />
+        <meta
+          name="viewport"
+          content="width=device-width, initial-scale=1, shrink-to-fit=no"
+        />
+        <meta name="theme-color" content="#000000" />
 
-    <link rel="shortcut icon" href="/favicon.ico" />
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
-    <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png" />
+        <link rel="shortcut icon" href="/favicon.ico" />
+        <link
+          rel="icon"
+          type="image/png"
+          sizes="16x16"
+          href="/favicon-16x16.png"
+        />
+        <link
+          rel="icon"
+          type="image/png"
+          sizes="32x32"
+          href="/favicon-32x32.png"
+        />
+        <link
+          rel="icon"
+          type="image/png"
+          sizes="96x96"
+          href="/favicon-96x96.png"
+        />
 
-    <title>Alembic</title>
-    <link rel="canonical" href="https://alembic.com.au/" />
-    <meta property="og:type" content="website" />
-    <meta
-      property="og:title"
-      content="GraphQL and Elixir Software Development &amp; Consulting"
-    />
-    <meta
-      property="og:description"
-      content="A Sydney-based Software Development Consultancy building cutting edge Web and API experiences with Elixir, GraphQL and React."
-    />
-    <meta property="og:url" content="https://alembic.com.au/" />
-    <meta
-      property="og:image"
-      content="https://alembic.com.au/alembic-logo.png"
-    />
-    <meta property="og:site_name" content="Alembic" />
-    <meta name="twitter:card" content="summary" />
-    <meta
-      name="twitter:image"
-      content="https://alembic.com.au/alembic-logo.png"
-    />
-    <meta
-      name="twitter:title"
-      content="GraphQL and Elixir Software Development &amp; Consulting"
-    />
-    <meta
-      name="twitter:description"
-      content="A Sydney-based Software Development Consultancy building cutting edge Web and API experiences with Elixir, GraphQL and React."
-    />
-    <meta name="twitter:site" content="@team_alembic" />
-    <meta name="twitter:creator" content="@team_alembic" />
-    <script type="application/ld+json">
-      {`{
+        <title>Alembic</title>
+        <link rel="canonical" href={data.site.siteMetadata.url} />
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content={data.site.siteMetadata.title} />
+        <meta
+          property="og:description"
+          content={data.site.siteMetadata.description}
+        />
+        <meta property="og:url" content={data.site.siteMetadata.url} />
+        <meta property="og:image" content={data.site.siteMetadata.image} />
+        <meta property="og:site_name" content="Alembic" />
+        <meta name="twitter:card" content="summary" />
+        <meta name="twitter:image" content={data.site.siteMetadata.image} />
+        <meta name="twitter:title" content={data.site.siteMetadata.title} />
+        <meta
+          name="twitter:description"
+          content={data.site.siteMetadata.description}
+        />
+        <meta name="twitter:site" content="@team_alembic" />
+        <meta name="twitter:creator" content="@team_alembic" />
+        <script type="application/ld+json">
+          {`{
         "@context": "http://schema.org",
         "@type": "Organization",
-        name: "Alembic",
+        name: {data.site.siteMetadata.name},
         legalName: "Alembic Pty Ltd",
-        url: "https://alembic.com.au",
-        logo: "https://alembic.com.au/alembic-logo.png",
+        url: {data.site.siteMetadata.url},
+        logo: {data.site.siteMetadata.image},
         foundingDate: "2017",
         founders: [
           {
@@ -90,6 +110,8 @@ export default () => (
           "https://twitter.com/teamalembic",
         ],
       }`}
-    </script>
-  </Helmet>
+        </script>
+      </Helmet>
+    )}
+  />
 )

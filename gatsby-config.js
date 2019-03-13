@@ -1,7 +1,11 @@
 module.exports = {
   siteMetadata: {
     name: `Alembic`,
-    tagline: `Alembic website`,
+    tagline: `Alembic Website`,
+    title: `GraphQL and Elixir Software Development &amp; Consulting`,
+    description: `A Sydney-based Software Development Consultancy building cutting edge Web and API experiences with Elixir, GraphQL and React.`,
+    url: `https://alembic.com.au/`,
+    image: `https://alembic.com.au/alembic-logo.png`
   },
   plugins: [{
       resolve: `gatsby-source-filesystem`,

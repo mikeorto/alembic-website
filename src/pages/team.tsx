@@ -1,4 +1,4 @@
-import React from "react"
+import React, { ReactNode } from "react"
 import { graphql } from "gatsby"
 import Img from "gatsby-image"
 import Layout from "../components/layout/layout"
@@ -9,7 +9,7 @@ export default ({
     allTeamYaml: { edges: members },
     allFile: { edges: images },
   },
-}) => {
+}: { data: any}) => {
   return (
     <Layout>
       <div className="team">
