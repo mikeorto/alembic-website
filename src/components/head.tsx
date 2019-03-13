@@ -50,7 +50,7 @@ export default () => (
           href="/favicon-96x96.png"
         />
 
-        <title>Alembic</title>
+        <title>{data.site.siteMetadata.name}</title>
         <link rel="canonical" href={data.site.siteMetadata.url} />
         <meta property="og:type" content="website" />
         <meta property="og:title" content={data.site.siteMetadata.title} />
@@ -68,8 +68,14 @@ export default () => (
           name="twitter:description"
           content={data.site.siteMetadata.description}
         />
-        <meta name="twitter:site" content={data.site.siteMetadata.social.twitter} />
-        <meta name="twitter:creator" content={data.site.siteMetadata.social.twitter} />
+        <meta
+          name="twitter:site"
+          content={data.site.siteMetadata.social.twitter}
+        />
+        <meta
+          name="twitter:creator"
+          content={data.site.siteMetadata.social.twitter}
+        />
         <script type="application/ld+json">
           {`{
         "@context": "http://schema.org",

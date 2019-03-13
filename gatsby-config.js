@@ -7,7 +7,7 @@ module.exports = {
     url: `https://alembic.com.au/`,
     image: `https://alembic.com.au/alembic-logo.png`,
     social: {
-      twitter: `@team_alembic`
+      twitter: `@team_alembic`,
     },
     menuLinks: [{
         name: 'Case Studies',
