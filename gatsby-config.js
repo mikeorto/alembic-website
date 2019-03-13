@@ -37,5 +37,21 @@ module.exports = {
         },
       },
     },
+    {
+      resolve: 'gatsby-plugin-favicons',
+      options: {
+        logo: './src/assets/images/alembic-logo.svg',
+        title: 'Alembic',
+        options: {
+          android: true,
+          appleIcon: true,
+          appleStartup: true,
+          coast: false,
+          favicons: true,
+          yandex: false,
+          windows: false
+        }
+      }
+    }
   ],
 }
