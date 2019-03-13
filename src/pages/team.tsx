@@ -9,7 +9,9 @@ export default ({
     allTeamYaml: { edges: members },
     allFile: { edges: images },
   },
-}: { data: any}) => {
+}: {
+  data: any
+}) => {
   return (
     <Layout>
       <div className="team">
@@ -19,12 +21,12 @@ export default ({
             const image = images.find(i => i.node.name === member.node.id)
             return (
               <li key={index}>
-                <h3>{member.node.name}</h3>
                 {image ? (
-                  <Img fluid={image.node.childImageSharp.fluid}/>
+                  <div>
+                    <h3>{member.node.name}</h3>
+                    <Img fluid={image.node.childImageSharp.fluid} />
+                  </div>
                 ) : null}
-                <h3>Bio:</h3>
-                <h4>{member.node.bio}</h4>
               </li>
             )
           })}
