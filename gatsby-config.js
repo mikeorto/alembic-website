@@ -5,7 +5,28 @@ module.exports = {
     title: `GraphQL and Elixir Software Development &amp; Consulting`,
     description: `A Sydney-based Software Development Consultancy building cutting edge Web and API experiences with Elixir, GraphQL and React.`,
     url: `https://alembic.com.au/`,
-    image: `https://alembic.com.au/alembic-logo.png`
+    image: `https://alembic.com.au/alembic-logo.png`,
+    menuLinks: [{
+        name: 'Case Studies',
+        link: '/case-studies'
+      },
+      {
+        name: 'Careers',
+        link: '/careers'
+      },
+      {
+        name: `Purpose`,
+        link: `/purpose`
+      },
+      {
+        name: `Team`,
+        link: `/team`
+      },
+      {
+        name: `Contact`,
+        link: `/contact`
+      },
+    ]
   },
   plugins: [{
       resolve: `gatsby-source-filesystem`,
