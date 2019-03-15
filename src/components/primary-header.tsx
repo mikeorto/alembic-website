@@ -6,7 +6,7 @@ import classname from "classnames"
 export default ({ internal }: { internal?: boolean }) => {
   const divStyle = classname({
     "primary-header": true,
-    internal: ( internal )
+    internal: internal,
   })
 
   return (
@@ -29,6 +29,9 @@ export default ({ internal }: { internal?: boolean }) => {
             </li>
             <li>
               <Link to="/team">Team</Link>
+            </li>
+            <li>
+              <Link to="/community">Community</Link>
             </li>
             <li>
               <Link to="/contact">Contact</Link>
