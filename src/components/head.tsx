@@ -33,6 +33,10 @@ export default () => (
 
         <title>{data.site.siteMetadata.name}</title>
         <link rel="canonical" href={data.site.siteMetadata.url} />
+        <meta
+          name="description"
+          content={data.site.siteMetadata.description}
+        />
         <meta property="og:type" content="website" />
         <meta property="og:title" content={data.site.siteMetadata.title} />
         <meta
