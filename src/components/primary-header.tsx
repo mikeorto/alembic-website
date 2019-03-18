@@ -2,6 +2,7 @@ import React from "react"
 import { Link } from "gatsby"
 import logo from "../assets/images/alembic-logo.svg"
 import classname from "classnames"
+import BurgerMenu from "../components/burger-menu"
 
 export default ({ internal }: { internal?: boolean }) => {
   const divStyle = classname({
@@ -38,6 +39,8 @@ export default ({ internal }: { internal?: boolean }) => {
             </li>
           </ul>
         </nav>
+
+        <BurgerMenu />
       </div>
     </div>
   )

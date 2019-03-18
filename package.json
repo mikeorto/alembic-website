@@ -13,6 +13,7 @@
     "@mdx-js/mdx": "^0.20.3",
     "@mdx-js/tag": "^0.20.3",
     "@types/classnames": "^2.2.7",
+    "@types/react-burger-menu": "^2.2.2",
     "@types/react-helmet": "^5.0.8",
     "classnames": "^2.2.6",
     "gatsby": "^2.1.20",
@@ -28,6 +29,7 @@
     "gatsby-transformer-sharp": "^2.1.15",
     "gatsby-transformer-yaml": "^2.1.10",
     "react": "^16.8.3",
+    "react-burger-menu": "^2.6.5",
     "react-dom": "^16.8.3",
     "react-helmet": "^5.2.0"
   },
