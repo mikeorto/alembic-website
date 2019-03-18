@@ -6,8 +6,8 @@ import BurgerMenu from "../components/burger-menu"
 
 export default ({ internal }: { internal?: boolean }) => {
   const divStyle = classname({
+    internal,
     "primary-header": true,
-    internal: internal,
   })
 
   return (
