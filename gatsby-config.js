@@ -1,48 +1,52 @@
+const description = `A Sydney-based Software Development Consultancy building cutting edge Web and API experiences with Elixir, GraphQL and React.`
+
 module.exports = {
   siteMetadata: {
     name: `Alembic`,
     tagline: `Alembic Website`,
     title: `GraphQL and Elixir Software Development &amp; Consulting`,
-    description: `A Sydney-based Software Development Consultancy building cutting edge Web and API experiences with Elixir, GraphQL and React.`,
+    description: description,
     url: `https://alembic.com.au/`,
     image: `https://alembic.com.au/alembic-logo.png`,
     social: {
       twitter: `@team_alembic`,
     },
-    menuLinks: [{
-        name: 'Case Studies',
-        link: '/case-studies'
+    menuLinks: [
+      {
+        name: "Case Studies",
+        link: "/case-studies",
       },
       {
-        name: 'Careers',
-        link: '/careers'
+        name: "Careers",
+        link: "/careers",
       },
       {
         name: `Purpose`,
-        link: `/purpose`
+        link: `/purpose`,
       },
       {
         name: `Team`,
-        link: `/team`
+        link: `/team`,
       },
       {
         name: `Contact`,
-        link: `/contact`
+        link: `/contact`,
       },
-    ]
+    ],
   },
-  plugins: [{
+  plugins: [
+    {
       resolve: `gatsby-source-filesystem`,
       options: {
         path: `${__dirname}/src/data`,
-        name: 'data',
+        name: "data",
       },
     },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
         path: `${__dirname}/src/assets/team`,
-        name: 'images',
+        name: "images",
       },
     },
     `gatsby-transformer-yaml`,
@@ -62,10 +66,15 @@ module.exports = {
       },
     },
     {
-      resolve: 'gatsby-plugin-favicons',
+      resolve: "gatsby-plugin-favicons",
       options: {
-        logo: './src/assets/images/alembic-logo.png',
-        title: 'Alembic',
+        logo: "./src/assets/images/alembic-logo.png",
+        lang: "en",
+        start_url: "/",
+        title: "Alembic",
+        description: description,
+        theme_color: "#1B1B38",
+        background_color: "#1B1B38",
         options: {
           android: true,
           appleIcon: true,
@@ -73,9 +82,9 @@ module.exports = {
           coast: false,
           favicons: true,
           yandex: false,
-          windows: false
-        }
-      }
-    }
+          windows: false,
+        },
+      },
+    },
   ],
 }
