@@ -3,8 +3,10 @@ import { Link } from "gatsby"
 import logo from "../assets/images/alembic-logo.svg"
 import classname from "classnames"
 import BurgerMenu from "../components/burger-menu"
+import { useSiteMetadata } from "../hooks/use-site-metadata"
 
 export default ({ internal }: { internal?: boolean }) => {
+  const { menulinks } = useSiteMetadata()
   const divStyle = classname({
     internal,
     "primary-header": true,
@@ -19,24 +21,11 @@ export default ({ internal }: { internal?: boolean }) => {
 
         <nav>
           <ul>
-            <li>
-              <Link to="/work">Work</Link>
+            {menulinks.map((menulink: any) =>
+            <li key={menulink.name}>
+              <Link to={menulink.link}>{menulink.name}</Link>
             </li>
-            <li>
-              <Link to="/careers">Careers</Link>
-            </li>
-            <li>
-              <Link to="/purpose">Purpose</Link>
-            </li>
-            <li>
-              <Link to="/team">Team</Link>
-            </li>
-            <li>
-              <Link to="/community">Community</Link>
-            </li>
-            <li>
-              <Link to="/contact">Contact</Link>
-            </li>
+              )}
           </ul>
         </nav>
 

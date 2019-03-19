@@ -11,9 +11,9 @@ module.exports = {
     social: {
       twitter: `@team_alembic`,
     },
-    menuLinks: [{
-        name: "Case Studies",
-        link: "/case-studies",
+    menulinks: [{
+        name: "Work",
+        link: "/work",
       },
       {
         name: "Careers",
@@ -26,6 +26,10 @@ module.exports = {
       {
         name: `Team`,
         link: `/team`,
+      },
+      {
+        name: `Community`,
+        link: `/community`,
       },
       {
         name: `Contact`,
