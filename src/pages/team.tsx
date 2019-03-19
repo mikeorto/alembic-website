@@ -15,7 +15,7 @@ export default ({
   return (
     <Layout>
       <div className="team">
-        <h2>Alembic Team</h2>
+        <h2>We Are Team Alembic</h2>
         <ul>
           {members.map(
             ({
