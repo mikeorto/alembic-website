@@ -9,8 +9,8 @@ export default ({ data }: { data: any }) => {
     <Layout>
       <div className="case-studies">
         <ul>
-          {data.allFile.edges.map(edge => (
-            <li>
+          {data.allFile.edges.map((edge: any, index: number) => (
+            <li key={index}>
               <a href={edge.node.childMdx.frontmatter.url}>
                 <h3>{edge.node.childMdx.frontmatter.title}</h3>
               </a>
