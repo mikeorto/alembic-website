@@ -11,8 +11,7 @@ module.exports = {
     social: {
       twitter: `@team_alembic`,
     },
-    menuLinks: [
-      {
+    menuLinks: [{
         name: "Case Studies",
         link: "/case-studies",
       },
@@ -34,8 +33,7 @@ module.exports = {
       },
     ],
   },
-  plugins: [
-    {
+  plugins: [{
       resolve: `gatsby-source-filesystem`,
       options: {
         path: `${__dirname}/src/data`,
@@ -45,7 +43,7 @@ module.exports = {
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        path: `${__dirname}/src/assets/team`,
+        path: `${__dirname}/src/assets/images/team`,
         name: `team-images`,
       },
     },
@@ -66,8 +64,22 @@ module.exports = {
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        path: `${__dirname}/src/content`,
-        name: `content`,
+        path: `${__dirname}/src/content/community`,
+        name: `community`,
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        path: `${__dirname}/src/content/case-studies`,
+        name: `case-studies`,
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        path: `${__dirname}/src/assets/images/case-studies`,
+        name: `case-study-images`,
       },
     },
     `gatsby-transformer-yaml`,
@@ -76,7 +88,10 @@ module.exports = {
     `gatsby-plugin-sass`,
     `gatsby-plugin-typescript`,
     `gatsby-plugin-tslint`,
-    `gatsby-mdx`,
+
+    {
+      resolve: `gatsby-mdx`,
+    },
     `gatsby-plugin-react-helmet`,
     {
       resolve: "gatsby-plugin-web-font-loader",
