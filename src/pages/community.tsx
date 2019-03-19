@@ -8,6 +8,7 @@ export default ({ data }: { data: any }) => {
   return (
     <Layout>
       <div className="case-studies">
+        <h2>Community Involvement</h2>
         <ul>
           {data.allFile.edges.map((edge: any, index: number) => (
             <li key={index}>
