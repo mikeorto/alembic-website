@@ -1,7 +1,7 @@
 import React from "react"
 import Layout from "../components/layout/layout"
 import Article from "../components/article"
-import PurposeContent from "../content/purpose.mdx"
+import PurposeContent from "../content/main/purpose.mdx"
 
 import "../App.scss"
 

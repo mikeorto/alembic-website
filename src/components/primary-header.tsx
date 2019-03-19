@@ -20,7 +20,7 @@ export default ({ internal }: { internal?: boolean }) => {
         <nav>
           <ul>
             <li>
-              <Link to="/case-studies">Case Studies</Link>
+              <Link to="/work">Work</Link>
             </li>
             <li>
               <Link to="/careers">Careers</Link>

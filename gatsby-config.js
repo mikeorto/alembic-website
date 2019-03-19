@@ -64,6 +64,13 @@ module.exports = {
     {
       resolve: `gatsby-source-filesystem`,
       options: {
+        path: `${__dirname}/src/content/main`,
+        name: `main`,
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
         path: `${__dirname}/src/content/community`,
         name: `community`,
       },
@@ -88,7 +95,6 @@ module.exports = {
     `gatsby-plugin-sass`,
     `gatsby-plugin-typescript`,
     `gatsby-plugin-tslint`,
-
     {
       resolve: `gatsby-mdx`,
     },

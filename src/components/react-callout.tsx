@@ -1,5 +1,5 @@
 import React from "react"
-import ReactCallout from "../content/react-callout.mdx"
+import ReactCallout from "../content/main/react-callout.mdx"
 
 export default () => (
   <div className="react-callout">

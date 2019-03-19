@@ -1,5 +1,5 @@
 import React from "react"
-import GraphQLCallout from "../content/graphql-callout.mdx"
+import GraphQLCallout from "../content/main/graphql-callout.mdx"
 
 export default () => (
   <div className="graphql-callout">

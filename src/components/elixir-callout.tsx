@@ -1,5 +1,5 @@
 import React from "react"
-import ElixirCallout from "../content/elixir-callout.mdx"
+import ElixirCallout from "../content/main/elixir-callout.mdx"
 
 export default () => (
   <div className="elixir-callout">

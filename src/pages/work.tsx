@@ -15,7 +15,7 @@ export default ({
 }) => (
   <Layout>
     <div className="case-studies">
-      <h2>Case Studies</h2>
+      <h2>Our Work</h2>
       <ul>
         {members.map((member: any) => {
           const image = images.find(

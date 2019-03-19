@@ -1,2 +1,5 @@
-exports.onCreateNode = ({ node }) => {
+exports.onCreateNode = ({
+  node
+}) => {
+
 }

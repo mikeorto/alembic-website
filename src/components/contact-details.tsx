@@ -1,5 +1,5 @@
 import React from "react"
-import ContactDetails from "../content/contact-details.mdx"
+import ContactDetails from "../content/main/contact-details.mdx"
 
 export default () => (
   <div className="contact-details">

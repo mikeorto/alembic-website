@@ -1,6 +1,6 @@
 import React from "react"
 import PrimaryHeader from "./primary-header"
-import HeroCallout from "../content/hero.mdx"
+import HeroCallout from "../content/main/hero.mdx"
 
 export default () => (
   <div className="hero">
