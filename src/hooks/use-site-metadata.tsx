@@ -6,6 +6,15 @@ export const useSiteMetadata = () => {
       query SiteMetaData {
         site {
           siteMetadata {
+            name
+            tagline
+            title
+            description
+            url
+            image
+            social {
+              twitter
+            }
             menulinks {
               name
               link

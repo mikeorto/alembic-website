@@ -21,11 +21,11 @@ export default ({ internal }: { internal?: boolean }) => {
 
         <nav>
           <ul>
-            {menulinks.map((menulink: any) =>
-            <li key={menulink.name}>
-              <Link to={menulink.link}>{menulink.name}</Link>
-            </li>
-              )}
+            {menulinks.map((menulink: any) => (
+              <li key={menulink.name}>
+                <Link to={menulink.link}>{menulink.name}</Link>
+              </li>
+            ))}
           </ul>
         </nav>
 

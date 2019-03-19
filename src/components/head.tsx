@@ -1,74 +1,62 @@
-import React, { ReactNode } from "react"
+import React from "react"
 import Helmet from "react-helmet"
-import { StaticQuery, graphql } from "gatsby"
+import { useSiteMetadata } from "../hooks/use-site-metadata"
 
-export default () => (
-  <StaticQuery
-    query={graphql`
-      query {
-        site {
-          siteMetadata {
-            name
-            tagline
-            title
-            description
-            url
-            image
-            social {
-              twitter
-            }
-          }
-        }
-      }
-    `}
-    render={data => (
-      <Helmet>
-        <html lang="en" />
-        <meta charSet="utf-8" />
-        <meta
-          name="viewport"
-          content="width=device-width, initial-scale=1, shrink-to-fit=no"
-        />
-        <meta name="theme-color" content="#1B1B38" />
+export default () => {
+  const {
+    name,
+    tagline,
+    title,
+    description,
+    url,
+    image,
+    social,
+  } = useSiteMetadata()
+  return (
+    <Helmet>
+      <html lang="en" />
+      <meta charSet="utf-8" />
+      <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1, shrink-to-fit=no"
+      />
+      <meta name="theme-color" content="#1B1B38" />
 
-        <title>{data.site.siteMetadata.name}</title>
-        <link rel="canonical" href={data.site.siteMetadata.url} />
-        <meta
-          name="description"
-          content={data.site.siteMetadata.description}
-        />
-        <meta property="og:type" content="website" />
-        <meta property="og:title" content={data.site.siteMetadata.title} />
-        <meta
-          property="og:description"
-          content={data.site.siteMetadata.description}
-        />
-        <meta property="og:url" content={data.site.siteMetadata.url} />
-        <meta property="og:image" content={data.site.siteMetadata.image} />
-        <meta property="og:site_name" content={data.site.siteMetadata.name} />
-        <meta name="twitter:card" content="summary" />
-        <meta name="twitter:image" content={data.site.siteMetadata.image} />
-        <meta name="twitter:title" content={data.site.siteMetadata.title} />
-        <meta
-          name="twitter:description"
-          content={data.site.siteMetadata.description}
-        />
-        <meta
-          name="twitter:site"
-          content={data.site.siteMetadata.social.twitter}
-        />
-        <meta
-          name="twitter:creator"
-          content={data.site.siteMetadata.social.twitter}
-        />
-        <script type="application/ld+json">
-          {`{
+      <title>{name}</title>
+      <link rel="canonical" href={url} />
+      <meta name="description" content={description} />
+      <meta property="og:type" content="website" />
+      <meta property="og:title" content={title} />
+      <meta
+        property="og:description"
+        content={description}
+      />
+      <meta property="og:url" content={url} />
+      <meta property="og:image" content={image} />
+      <meta property="og:site_name" content={name} />
+      <meta name="twitter:card" content="summary" />
+      <meta name="twitter:image" content={image} />
+      <meta name="twitter:title" content={title} />
+      <meta
+        name="twitter:description"
+        content={description}
+      />
+      <meta
+        name="twitter:site"
+        content={social.twitter}
+      />
+      <meta
+        name="twitter:creator"
+        content={social.twitter}
+      />
+      <script type="application/ld+json">
+        {`{
         "@context": "http://schema.org",
         "@type": "Organization",
-        name: {data.site.siteMetadata.name},
+        name: {name},
         legalName: "Alembic Pty Ltd",
-        url: {data.site.siteMetadata.url},
-        logo: {data.site.siteMetadata.image},
+        url: {url},
+        logo: {image},
         foundingDate: "2017",
         founders: [
           {
@@ -104,8 +92,7 @@ export default () => (
           "https://twitter.com/teamalembic",
         ],
       }`}
-        </script>
-      </Helmet>
-    )}
-  />
-)
+      </script>
+    </Helmet>
+  )
+}
