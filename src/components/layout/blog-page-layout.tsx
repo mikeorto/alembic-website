@@ -1,8 +1,8 @@
 import React, { ReactNode } from "react"
 import { graphql } from "gatsby"
 import MDXRenderer from "gatsby-mdx/mdx-renderer"
-import Layout from "../components/layout/layout"
-import Article from "../components/article"
+import Layout from "../../components/layout/layout"
+import Article from "../../components/article"
 
 import "../../App.scss"
 
