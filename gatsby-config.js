@@ -35,6 +35,10 @@ module.exports = {
         name: `Contact`,
         link: `/contact`,
       },
+      {
+        name: `Blog`,
+        link: `/blog`,
+      },
     ],
   },
   plugins: [{
@@ -91,6 +95,13 @@ module.exports = {
       options: {
         path: `${__dirname}/src/assets/images/case-studies`,
         name: `case-study-images`,
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        path: `${__dirname}/src/content/blog`,
+        name: `blog`,
       },
     },
     `gatsby-transformer-yaml`,
