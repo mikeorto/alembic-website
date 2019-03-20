@@ -13,13 +13,11 @@ export default ({
 }) => {
   return (
     <Layout>
-      <Article>
-        {edges
-          .filter(edge => !!edge.node.modifiedTime) // You can filter your posts based on some criteria
-          .map(edge => (
-            <PostLink key={edge.node.id} post={edge.node} />
-          ))}
-      </Article>
+      {edges
+        .filter(edge => !!edge.node.modifiedTime)
+        .map(edge => (
+          <PostLink key={edge.node.id} post={edge.node} />
+        ))}
     </Layout>
   )
 }
