@@ -3,10 +3,16 @@ import { Link } from "gatsby"
 
 export default ({ post }: { post: any }) => (
   <div className="wrap">
-    <Link to={post.frontmatter.path}>
-      <h1>
-        {post.frontmatter.title} ({post.frontmatter.date})<p>{post.excerpt}</p>
-      </h1>
+    <Link to={post.childMdx.frontmatter.path}>
+      <h2>
+        {post.childMdx.frontmatter.title} 
+      </h2>
+        <p>{post.childMdx.excerpt}</p>
+      <p>
+        By {post.childMdx.frontmatter.author} &emsp;
+        <em>{post.modifiedTime}</em>
+      </p>
+      {/* <hr /> */}
     </Link>
   </div>
 )

@@ -6,7 +6,7 @@ import Article from "../components/article"
 
 export default ({
   data: {
-    allMdx: { edges },
+    allFile: { edges },
   },
 }: {
   data: any
@@ -15,7 +15,7 @@ export default ({
     <Layout>
       <Article>
         {edges
-          .filter(edge => !!edge.node.frontmatter.date) // You can filter your posts based on some criteria
+          .filter(edge => !!edge.node.modifiedTime) // You can filter your posts based on some criteria
           .map(edge => (
             <PostLink key={edge.node.id} post={edge.node} />
           ))}
@@ -26,19 +26,18 @@ export default ({
 
 export const pageQuery = graphql`
   query {
-    allMdx(
-      filter: { fileAbsolutePath: { regex: "/blog/" } }
-      sort: { order: DESC, fields: [frontmatter___date] }
-    ) {
+    allFile(filter: { sourceInstanceName: { eq: "blog" } }) {
       edges {
         node {
-          id
-          excerpt(pruneLength: 250)
-          frontmatter {
-            date
-            title
-            path
+          childMdx {
+            excerpt
+            frontmatter {
+              title
+              author
+              path
+            }
           }
+          modifiedTime(formatString: "Do MMMM YYYY")
         }
       }
     }
