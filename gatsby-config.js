@@ -35,6 +35,10 @@ module.exports = {
         name: `Contact`,
         link: `/contact`,
       },
+      {
+        name: `Blog`,
+        link: `/blog`,
+      },
     ],
   },
   plugins: [{
