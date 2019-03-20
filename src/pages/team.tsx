@@ -30,7 +30,12 @@ export default ({
                 return (
                   <li key={frontmatter.id}>
                     <h3>{frontmatter.name}</h3>
-                    <Img fluid={image.node.childImageSharp.fluid} />
+                    <Img
+                      fluid={{
+                        ...image.node.childImageSharp.fluid,
+                        aspectRatio: 3 / 4,
+                      }}
+                    />
                   </li>
                 )
               }
