@@ -13,11 +13,13 @@ export default ({
 }) => {
   return (
     <Layout>
-      {edges
-        .filter(edge => !!edge.node.modifiedTime)
-        .map(edge => (
-          <PostLink key={edge.node.id} post={edge.node} />
-        ))}
+      <Article>
+        {edges
+          .filter(edge => !!edge.node.modifiedTime)
+          .map(edge => (
+            <PostLink key={edge.node.id} post={edge.node} />
+          ))}
+      </Article>
     </Layout>
   )
 }
