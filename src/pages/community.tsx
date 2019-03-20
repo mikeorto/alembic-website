@@ -11,10 +11,10 @@ export default ({ data }: { data: any }) => {
         <h2>
           Community Involvement
           <p>
-            When we're not building amazing software for our clients, we're
-            out helping out the community. We speak at meetups and conferences
-            and love sharing the knowledge we've built up over the years.
-            These are some of the things we are currently really involved in.
+            When we're not building amazing software for our clients, we're out
+            helping out the community. We speak at meetups and conferences and
+            love sharing the knowledge we've built up over the years. These are
+            some of the things we are currently really involved in.
           </p>
         </h2>
         <ul>
