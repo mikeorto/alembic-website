@@ -17,6 +17,11 @@
       &:not(:last-child) {
         display: none;
       }
+
+      li a {
+        padding:15px 150px 15px 15px;
+      }
+
     }
 
     ul {
@@ -24,15 +29,17 @@
       list-style: none;
     }
 
+
     li {
       display: inline-block;
 
       &:not(:last-child) {
         padding-right: 15px;
-        padding-bottom: 15px;
       }
 
       a {
+        display: block;
+
         font-size: 16px;
         font-weight: 500;
         color: #fff;
