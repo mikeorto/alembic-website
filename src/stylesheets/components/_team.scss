@@ -1,5 +1,4 @@
-.what-we-do,
-.case-studies {
+.team {
   padding: 100px 0;
 
   aside {
@@ -50,14 +49,6 @@
         @include grid-column(12);
         padding-right: 0;
         clear: both;
-      }
-
-      &:nth-child(4n) {
-        clear: left;
-
-        @include grid-media($tablet-grid) {
-          clear: none;
-        }
       }
     }
   }
