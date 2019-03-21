@@ -81,6 +81,17 @@ export default () => {
         ],
       }`}
       </script>
+      <script>
+        {`// this code removes installed service workers from th
+        // pre-Gatsby version of the website
+        navigator.serviceWorker.getRegistrations().then(
+          function(registrations) {
+            for(let registration of registrations) {
+              registration.unregister()
+            }
+          }
+        )`}
+      </script>
     </Helmet>
   )
 }
