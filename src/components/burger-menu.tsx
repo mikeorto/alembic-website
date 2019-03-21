@@ -6,7 +6,7 @@ export default () => {
   const { menulinks } = useSiteMetadata()
   return (
     <div>
-      <Menu right width={"45%"} noOverlay>
+      <Menu right width={"45%"}>
         <main>
           <ul className="bm-item-list">
             {menulinks.map((menulink: any) => (
