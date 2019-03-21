@@ -44,13 +44,6 @@ module.exports = {
   plugins: [{
       resolve: `gatsby-source-filesystem`,
       options: {
-        path: `${__dirname}/src/data`,
-        name: `data`,
-      },
-    },
-    {
-      resolve: `gatsby-source-filesystem`,
-      options: {
         path: `${__dirname}/src/assets/images/team`,
         name: `team-images`,
       },
