@@ -37,4 +37,67 @@ article.article {
     line-height: 28px;
     padding: 10px 0;
   }
+
+  .full-image-right {
+    width: 300px;
+    font-size: 80%;
+    text-align: center;
+    float: right;
+    margin: 10px;
+
+    @media only screen and (max-width: 641px) {
+      float: none;
+      width: 90%;
+      height: 90%;
+    }
+  }
+
+  .full-image-left {
+    width: 300px;
+    font-size: 80%;
+    text-align: center;
+    float: left;
+    margin: 10px;
+
+    @media only screen and (max-width: 641px) {
+      float: none;
+      width: 90%;
+      height: 90%;
+    }
+  }
+
+  .half-image-right {
+    width: 150px;
+    font-size: 80%;
+    text-align: center;
+    float: right;
+    margin: 20px;
+
+    @media only screen and (max-width: 641px) {
+      float: none;
+      width: 90%;
+      height: 90%;
+    }
+  }
+
+  .half-image-left {
+    width: 150px;
+    font-size: 80%;
+    text-align: center;
+    float: left;
+    margin: 15px;
+
+    @media only screen and (max-width: 641px) {
+      float: left;
+      width: 45%;
+      height: 45%;
+      // padding: 5px;
+    }
+  }
+
+
+  img {
+    padding: 1px;
+  }
+
 }
