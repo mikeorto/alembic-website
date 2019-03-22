@@ -3,7 +3,7 @@ import PostLink from "../components/post-link"
 import { graphql } from "gatsby"
 import Layout from "../components/layout/layout"
 import Article from "../components/article"
-
+import Helmet from "react-helmet"
 export default ({
   data: {
     allFile: { edges },
@@ -13,6 +13,9 @@ export default ({
 }) => {
   return (
     <Layout>
+      <Helmet>
+        <title>Blog</title>
+      </Helmet>
       <Article>
         {edges
           .filter(edge => !!edge.node.modifiedTime)

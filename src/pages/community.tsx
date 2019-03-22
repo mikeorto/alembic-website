@@ -1,12 +1,15 @@
 import React from "react"
 import Layout from "../components/layout/layout"
 import { graphql } from "gatsby"
-
+import Helmet from "react-helmet"
 import "../App.scss"
 
 export default ({ data }: { data: any }) => {
   return (
     <Layout>
+      <Helmet>
+        <title>Community Involvement</title>
+      </Helmet>
       <div className="case-studies">
         <h2>
           Community Involvement
