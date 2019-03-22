@@ -1,7 +1,7 @@
 ---
 path: "/blog/2019-03-21-gatsbyjs"
 date: "2019-03-20"
-title: "GatsbyJS"
+title: "GatsbyJS:  The Next Step in Static Site Generation"
 author: "Ryan Sickle"
 ---
 
@@ -33,10 +33,14 @@ But even MORE than that - and this, for me, is the pièce de résistance - you c
   <em>GatsbyJS</em>
 </div>
 
-This, what you are reading currently, is in an MDX file sitting somewhere snug in our filesystem and being delivered to you courtesy of GraphQL. No longer need we sift through the riff raff of HTML tags and badly indented code (you know who you are!), Gatsby allows us to smugly retain distance from the forest, and throw seeds of content into the thicket.
+This, what you are reading currently, is in an MDX file sitting somewhere snug in our filesystem and being delivered to you courtesy of GraphQL. No longer need we sift through the riff raff of HTML tags and badly indented code (you know who you are!), Gatsby allows us to smugly retain distance from the forest, and throw seeds of content into the thicket.  And Markdown isn't the limit.  Gatsby will parse XML, CSV, Excel files, YAML, JSON, PDF....the list goes on.  Whatever format your data is in, Gatsby has a plugin to handle it.
 
 And it's fast. Blazingly fast. Page loading is instant. Just like what you would expect from a static site. And the Gatsby eco-system is modular, allowing you to easily add functionality via the use of plugins. And if you can't find the functionality you want...make a plugin for it. Gatsby allows you to do that.
 
-It's powerful. And fun! Gatsby brings the joy back into website development. It's complex enough to be challenging but fluid enough (as long as you stick to the Gatsby conventions) to allow a certain flow in how you create your web site. It at times blurs the line between what it means for something to be front-end or back-end, but it does so in a way that makes sense eventually.
+To manage content, the options are numerous. You can connect it to any CMS such as Wordpress or go headless such as Contentful. But what I like to do, and what we have chosen here at Alembic, is to use Github as your CMS. Using Netlify you can take advantage of their continuous deployment by linking it to your Github repository. Every time you make a change to a file and push it up without errors, Netlify will automatically update your hosted website. Combine that, with the ability to use Markdown, and you will never need a CMS again.
+
+So why use it over something like WordPress? Language barriers aside, the biggest thing about Gatsby is the ability to leverage React and GraphQL. With this combination you push the boundaries of what it means for a site to be static. You get the speed of a static site with the scalability of a Web App. Using React's component system and GraphQL's structured queries gives you the power to pull in massive amounts of data and programmatically generate static content quickly and beautifully.
+
+It's powerful. And fun! Gatsby brings the joy back into website development. It's complex enough to be challenging but fluid enough (as long as you stick to the Gatsby conventions) to allow a certain flow in how you create your web site. It at times blurs the line between what it means for a site to be static or dynamic, but it does so in a way that makes complete sense.
 
 [Check it out](https://www.gatsbyjs.org/). This could be the framework you are looking for.
