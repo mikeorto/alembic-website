@@ -13,7 +13,9 @@ export default () => {
     social,
   } = useSiteMetadata()
   return (
-    <Helmet>
+    <Helmet
+      defaultTitle="Alembic &mdash; Custom Software, Elixir Developers, GraphQL APIs, React UIs"
+      titleTemplate="%s &mdash; Alembic">
       <html lang="en" />
       <meta charSet="utf-8" />
       <meta
@@ -22,7 +24,6 @@ export default () => {
       />
       <meta name="theme-color" content="#1B1B38" />
 
-      <title>{name}</title>
       <link rel="canonical" href={url} />
       <meta name="description" content={description} />
       <meta property="og:type" content="website" />

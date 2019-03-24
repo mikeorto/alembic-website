@@ -2,6 +2,7 @@ import React, { ReactNode } from "react"
 import { graphql } from "gatsby"
 import Img from "gatsby-image"
 import Layout from "../components/layout/layout"
+import Helmet from "react-helmet"
 import "../App.scss"
 
 export default ({
@@ -14,6 +15,9 @@ export default ({
 }) => {
   return (
     <Layout>
+      <Helmet>
+        <title>We Are Team Alembic</title>
+      </Helmet>
       <div className="team">
         <h2>We Are Team Alembic</h2>
         <ul>

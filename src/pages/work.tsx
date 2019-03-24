@@ -2,7 +2,7 @@ import React from "react"
 import Layout from "../components/layout/layout"
 import { Link, graphql } from "gatsby"
 import Img from "gatsby-image"
-
+import Helmet from "react-helmet"
 import "../App.scss"
 
 export default ({
@@ -14,6 +14,9 @@ export default ({
   data: any
 }) => (
   <Layout>
+<Helmet>
+  <title>Our Customers</title>
+</Helmet>
     <div className="case-studies">
       <h2>Our Work</h2>
       <ul>
