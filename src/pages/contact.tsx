@@ -6,9 +6,9 @@ import "../App.scss"
 
 export default () => (
   <Layout name="contact">
-  <Helmet>
-    <title>Contact Us</title>
-  </Helmet>
+    <Helmet>
+      <title>Contact Us</title>
+    </Helmet>
     <ContactDetails />
   </Layout>
 )
