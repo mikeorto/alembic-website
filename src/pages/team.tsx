@@ -35,7 +35,6 @@ export default ({
                   <li key={frontmatter.id}>
                     <h3>{frontmatter.name}</h3>
                     <Img
-                      // fadeIn={false}
                       fluid={{
                         ...image.node.childImageSharp.fluid,
                         aspectRatio: 3 / 4,
