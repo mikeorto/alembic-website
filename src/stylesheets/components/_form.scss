@@ -1,28 +1,26 @@
 .form {
   max-width: 1440px;
-  margin: 0px auto;
   background: $elixir-purple;
   padding: 110px;
 
   @include grid-media($mobile-grid) {
     height: auto;
-    padding: 80px 0;
+    padding: 40px;
   }
 
   h2,
-  h1 {
+  h1,
+  label {
     font-weight: 100;
     font-family: $playfair;
     color: #fff;
     padding-bottom: 20px;
   }
 
-
   input,
   select,
   textarea {
     font-size: 24px;
-    font-family: $playfair;
     width: 80%;
     padding: 20px;
     background-color: $elixir-purple;
@@ -32,10 +30,6 @@
 
   textarea {
     height: 150px;
-  }
-
-  select {
-    width: 30%;
   }
 
   ::placeholder {
@@ -50,22 +44,22 @@
     border: none;
   }
 
-  .enquiry {
-    p {
+  &.enquiry {
+    margin: 20px -40px;
+
+    @include grid-media($mobile-grid) {
+      height: auto;
+      padding: 40px;
+    }
+
+    label {
+      display: block;
       font-size: 18px;
       font-weight: 100;
       font-family: $playfair;
       line-height: 38px;
       color: #fff;
       padding-top: 30px;
-
-      span {
-        color: #fff;
-        font-style: italic;
-        font-size: 14px;
-      }
     }
-
-
   }
 }
