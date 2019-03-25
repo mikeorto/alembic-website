@@ -14,9 +14,9 @@ export default ({
   data: any
 }) => (
   <Layout>
-<Helmet>
-  <title>Our Customers</title>
-</Helmet>
+    <Helmet>
+      <title>Our Customers</title>
+    </Helmet>
     <div className="case-studies">
       <h2>Our Work</h2>
       <ul>
@@ -65,7 +65,7 @@ export const pageQuery = graphql`
           name
           childImageSharp {
             fixed(width: 179) {
-              ...GatsbyImageSharpFixed_withWebp
+              ...GatsbyImageSharpFixed_withWebp_tracedSVG
             }
           }
         }
