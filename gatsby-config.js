@@ -11,7 +11,8 @@ module.exports = {
     social: {
       twitter: `@team_alembic`,
     },
-    menulinks: [{
+    menulinks: [
+      {
         name: "Work",
         link: "/work",
       },
@@ -41,7 +42,8 @@ module.exports = {
       },
     ],
   },
-  plugins: [{
+  plugins: [
+    {
       resolve: `gatsby-source-filesystem`,
       options: {
         path: `${__dirname}/src/assets/images/team`,
@@ -72,13 +74,6 @@ module.exports = {
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        path: `${__dirname}/src/content/community`,
-        name: `community`,
-      },
-    },
-    {
-      resolve: `gatsby-source-filesystem`,
-      options: {
         path: `${__dirname}/src/content/case-studies`,
         name: `case-studies`,
       },
@@ -95,18 +90,31 @@ module.exports = {
       options: {
         path: `${__dirname}/src/content/blog`,
         name: `blog`,
+        ignore: [`**/*.png`, `**/*.jpg`],
       },
     },
+    "gatsby-plugin-catch-links",
     `gatsby-transformer-yaml`,
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     `gatsby-plugin-sass`,
     `gatsby-plugin-typescript`,
     `gatsby-plugin-tslint`,
+    `gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-mdx`,
+      options: {
+        gatsbyRemarkPlugins: [
+          {
+            resolve: "gatsby-remark-images",
+            options: {
+              backgroundColor: "#fafafa",
+              maxWidth: 500,
+            },
+          },
+        ],
+      },
     },
-    `gatsby-plugin-react-helmet`,
     {
       resolve: "gatsby-plugin-web-font-loader",
       options: {
