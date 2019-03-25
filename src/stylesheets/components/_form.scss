@@ -9,21 +9,33 @@
     padding: 80px 0;
   }
 
-  h2 {
-    font-size: 24px;
+  h2,
+  h1 {
     font-weight: 100;
     font-family: $playfair;
     color: #fff;
     padding-bottom: 20px;
   }
 
-  input {
+
+  input,
+  select,
+  textarea {
     font-size: 24px;
-    width: 500px;
+    font-family: $playfair;
+    width: 80%;
     padding: 20px;
     background-color: $elixir-purple;
     border: #fff 1px solid;
     color: #fff;
+  }
+
+  textarea {
+    height: 150px;
+  }
+
+  select {
+    width: 30%;
   }
 
   ::placeholder {
@@ -38,4 +50,22 @@
     border: none;
   }
 
+  .enquiry {
+    p {
+      font-size: 18px;
+      font-weight: 100;
+      font-family: $playfair;
+      line-height: 38px;
+      color: #fff;
+      padding-top: 30px;
+
+      span {
+        color: #fff;
+        font-style: italic;
+        font-size: 14px;
+      }
+    }
+
+
+  }
 }
