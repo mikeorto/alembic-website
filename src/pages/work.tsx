@@ -65,7 +65,7 @@ export const pageQuery = graphql`
           name
           childImageSharp {
             fixed(width: 179) {
-              ...GatsbyImageSharpFixed_withWebp_tracedSVG
+              ...GatsbyImageSharpFixed_withWebp_noBase64
             }
           }
         }

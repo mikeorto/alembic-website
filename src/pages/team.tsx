@@ -35,7 +35,7 @@ export default ({
                   <li key={frontmatter.id}>
                     <h3>{frontmatter.name}</h3>
                     <Img
-                      fadeIn={false}
+                      // fadeIn={false}
                       fluid={{
                         ...image.node.childImageSharp.fluid,
                         aspectRatio: 3 / 4,
@@ -74,7 +74,7 @@ export const pageQuery = graphql`
           name
           childImageSharp {
             fluid(maxWidth: 500) {
-              ...GatsbyImageSharpFluid_withWebp_tracedSVG
+              ...GatsbyImageSharpFluid_withWebp_noBase64
             }
           }
         }
