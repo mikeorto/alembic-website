@@ -10,6 +10,7 @@ import ElixirCallout from "../components/elixir-callout"
 import GraphQLCallout from "../components/graphql-callout"
 import ReactCallout from "../components/react-callout"
 import Footer from "../components/footer"
+import ContactForm from "../components/contact-form"
 
 export default () => (
   <div className="homepage">
@@ -20,7 +21,7 @@ export default () => (
     <ElixirCallout />
     <GraphQLCallout />
     <ReactCallout />
+    <ContactForm />
     <Footer />
   </div>
 )
-
