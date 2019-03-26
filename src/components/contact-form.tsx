@@ -2,11 +2,11 @@ import React from "react"
 
 export default () => (
   <div className="form">
-    <form name="contact" method="POST" data-netlify="true">
+    <form name="newsletter" method="POST" data-netlify="true">
       <label htmlFor="email">
         <h2>Subscribe to our newsletter</h2>
       </label>
-      <input type="hidden" name="form-name" value="contact" />
+      <input type="hidden" name="form-name" value="newsletter" />
       <input
         type="email"
         id="email"
