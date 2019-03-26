@@ -5,7 +5,7 @@
   "scripts": {
     "start": "gatsby develop",
     "develop": "gatsby develop",
-    "build": "gatsby build && cp -vr public build",
+    "build": "gatsby build",
     "serve": "gatsby serve"
   },
   "dependencies": {
