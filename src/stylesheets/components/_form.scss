@@ -2,6 +2,7 @@
   max-width: 1440px;
   background: $elixir-purple;
   padding: 110px;
+  margin: 0 auto;
 
   @include grid-media($mobile-grid) {
     height: auto;
