@@ -91,7 +91,7 @@ export default () => (
             <img width="220px" height="40px" alt="Tyro logo" src={tyro} />
             <p>
               Alembic provided technical Due Diligence services to ensure both
-              software and process quality of an acquisition target.
+              software and process quality of a potential acquisition.
             </p>
           </h3>
         </li>

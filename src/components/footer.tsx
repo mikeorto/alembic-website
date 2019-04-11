@@ -7,6 +7,6 @@ export default () => (
       <img src={logo} alt="Alembic" width="150" />
     </p>
 
-    <p>Copyright 2018, Alembic Pty Ltd.</p>
+    <p>Copyright 2019, Alembic Pty Ltd.</p>
   </footer>
 )
