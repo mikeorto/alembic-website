@@ -36,28 +36,12 @@
       @include grid-media($tablet-grid) {
         @include grid-column(6);
         padding-right: 20px;
-
-        &:nth-child(3n) {
-          clear: left;
-        }
-
-        &:last-child {
-          clear: none;
-        }
       }
 
       @include grid-media($mobile-grid) {
         @include grid-column(12);
         padding-right: 0;
         clear: both;
-      }
-
-      &:nth-child(4n) {
-        clear: left;
-
-        @include grid-media($tablet-grid) {
-          clear: none;
-        }
       }
     }
   }
