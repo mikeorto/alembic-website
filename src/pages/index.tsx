@@ -6,19 +6,14 @@ import "../App.scss"
 import ServiceOfferings from "../components/service-offerings"
 import Footer from "../components/footer"
 import ContactForm from "../components/contact-form"
-import ElixirCallout from "../components/elixir-callout"
-import GraphQLCallout from "../components/graphql-callout"
-import ReactCallout from "../components/react-callout"
 
 export default () => (
   <div className="homepage">
     <Head />
     <Hero />
     <ServiceOfferings />
-    <ElixirCallout />
-    <GraphQLCallout />
-    <ReactCallout />
-    <div className="wrap" style={{padding: "40px 80px"}}>
+    <ContactForm />
+    <div className="wrap" style={{ padding: "40px 80px" }}>
       <div className="contact-details">
         <article>
           <h2>
@@ -35,7 +30,6 @@ export default () => (
         </article>
       </div>
     </div>
-    <ContactForm />
     <Footer />
   </div>
 )
