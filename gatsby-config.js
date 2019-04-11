@@ -11,7 +11,8 @@ module.exports = {
     social: {
       twitter: `@team_alembic`,
     },
-    menulinks: [{
+    menulinks: [
+      {
         name: "Work",
         link: "/work",
       },
@@ -32,6 +33,10 @@ module.exports = {
         link: `/community`,
       },
       {
+        name: `Technology`,
+        link: `/technology`,
+      },
+      {
         name: `Contact`,
         link: `/contact`,
       },
@@ -41,7 +46,8 @@ module.exports = {
       },
     ],
   },
-  plugins: [{
+  plugins: [
+    {
       resolve: `gatsby-source-filesystem`,
       options: {
         path: `${__dirname}/src/assets/images/team`,

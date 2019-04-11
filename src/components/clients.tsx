@@ -1,4 +1,5 @@
 import React from "react"
+import { Link } from "gatsby"
 
 import scentregroup from "../assets/images/case-studies/scentregroup.svg"
 import suncorp from "../assets/images/case-studies/suncorp.svg"
@@ -14,12 +15,17 @@ export default () => (
   <div
     id="clients"
     className="what-we-do wrap form"
-    style={{ backgroundColor: "#e3e3e3" }}>
+    style={{
+      backgroundColor: "#e3e3e3",
+    }}>
     <aside>
       <h2 className="line">
         <span style={{ backgroundColor: "#e3e3e3" }}>Clients We Love</span>
       </h2>
-      <ul>
+      <ul
+        style={{
+          filter: "saturate(0%) contrast(50%)",
+        }}>
         <li>
           <img
             width="220px"
@@ -68,6 +74,9 @@ export default () => (
           <img height="40px" alt="TappOn logo" src={tappon} />
         </li>
       </ul>
+      <Link to="/work" className="btn btn-secondary">
+        Find out more
+      </Link>
     </aside>
   </div>
 )

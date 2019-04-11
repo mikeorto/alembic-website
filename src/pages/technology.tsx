@@ -1,5 +1,7 @@
 import React from "react"
 import Head from "../components/head"
+import Layout from "../components/layout/layout"
+import Helmet from "react-helmet"
 
 import "../App.scss"
 import WhatWeDo from "../components/what-we-do"
@@ -11,14 +13,15 @@ import Footer from "../components/footer"
 import ContactForm from "../components/contact-form"
 
 export default () => (
-  <div className="homepage">
-    <Head />
+  <Layout>
+    <Helmet>
+      <title>Our Customers</title>
+    </Helmet>
     <WhatWeDo />
     <HowWeDoIt />
     <ElixirCallout />
     <GraphQLCallout />
     <ReactCallout />
     <ContactForm />
-    <Footer />
-  </div>
+  </Layout>
 )
