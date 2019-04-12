@@ -12,10 +12,11 @@ export default () => (
       <label htmlFor="phone">Best phone number</label>
       <input type="text" id="phone" name="phone" />
       <label htmlFor="budget">Do you have a budget in mind?</label>
-      <select id="budget" name="budget" placeholder="Select one">
-        <option value="Less than $10,000" selected>
-          Less than $10,000
+      <select id="budget" name="budget">
+        <option value="" disabled selected>
+          Select a budget range
         </option>
+        <option value="Less than $10,000">Less than $10,000</option>
         <option value="$10,000 - $50,000">$10,000 - $50,000</option>
         <option value="$50,000 - $100,000">$50,000 - $100,000</option>
         <option value="$100,000 - $250,000">$100,000 - $250,000</option>

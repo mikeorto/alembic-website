@@ -20,11 +20,14 @@ export default () => (
     }}>
     <aside>
       <h2 className="line">
-        <span style={{ backgroundColor: "#f3f3f3" }}>Clients We Love</span>
+        <span style={{ backgroundColor: "#f3f3f3", fontWeight: "700" }}>
+          Clients We Love
+        </span>
       </h2>
       <ul
         style={{
           filter: "saturate(0%) contrast(50%)",
+          marginLeft: "50px",
         }}>
         <li>
           <img
@@ -44,25 +47,13 @@ export default () => (
           <img height="40px" alt="Tyro logo" src={tyro} />
         </li>
         <li>
-          <img
-            height="40px"
-            alt="Expert360 logo"
-            src={expert360}
-          />
+          <img height="40px" alt="Expert360 logo" src={expert360} />
         </li>
         <li>
-          <img
-            height="40px"
-            alt="Class Solver logo"
-            src={classSolver}
-          />
+          <img height="40px" alt="Class Solver logo" src={classSolver} />
         </li>
         <li>
-          <img
-            height="40px"
-            alt="Svenska Alarm logo"
-            src={svenskaAlarm}
-          />
+          <img height="40px" alt="Svenska Alarm logo" src={svenskaAlarm} />
         </li>
         <li>
           <img height="40px" alt="Laava logo" src={laava} />
@@ -71,7 +62,10 @@ export default () => (
           <img height="40px" alt="TappOn logo" src={tappon} />
         </li>
       </ul>
-      <Link to="/work" className="btn btn-secondary">
+      <Link
+        to="/work"
+        className="btn btn-secondary"
+        style={{ margin: "0 auto", width: "250px" }}>
         Find out more
       </Link>
     </aside>
