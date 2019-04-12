@@ -6,7 +6,7 @@ import EnquiryForm from "../components/enquiry-form"
 
 import scentregroup from "../assets/images/case-studies/scentregroup.svg"
 import suncorp from "../assets/images/case-studies/suncorp.svg"
-import woolworths from "../assets/images/case-studies/woolworths.png"
+import woolworths from "../assets/images/case-studies/woolworths.svg"
 import classSolver from "../assets/images/case-studies/classsolver.svg"
 import expert360 from "../assets/images/case-studies/expert360.svg"
 import tyro from "../assets/images/case-studies/tyro.svg"
@@ -44,7 +44,19 @@ export default () => (
         </li>
         <li>
           <h3>
-            <img width="250px" height="40px" alt="Suncorp logo" src={suncorp} />
+            <img height="40px" alt="Woolworths logo" src={woolworths} />
+            <p>
+              WooliesX engaged Alembic to build a fleet management system for
+              provisioning drivers to deliver Express Delivery orders to
+              customers within an hour. We built a event-sourced system in
+              Elixir which connected to multiple driver APIs to ensure that the
+              delivery was picked up at exactly the right time.
+            </p>
+          </h3>
+        </li>
+        <li>
+          <h3>
+            <img height="40px" alt="Suncorp logo" src={suncorp} />
             <p>
               Suncorp integrated all of its banking and insurance services into
               one single marketplace. To do this required coordinating APIs
@@ -60,24 +72,7 @@ export default () => (
         </li>
         <li>
           <h3>
-            <img height="40px" alt="Woolworths logo" src={woolworths} />
-            <p>
-              WooliesX engaged Alembic to build a fleet management system for
-              provisioning drivers to deliver Express Delivery orders to
-              customers within an hour. We built a event-sourced system in
-              Elixir which connected to multiple driver APIs to ensure that the
-              delivery was picked up at exactly the right time.
-            </p>
-          </h3>
-        </li>
-        <li>
-          <h3>
-            <img
-              width="220px"
-              height="40px"
-              alt="Class Solver logo"
-              src={classSolver}
-            />
+            <img height="40px" alt="Class Solver logo" src={classSolver} />
             <p>
               Alembic delivered an MVP SaaS product for placing students into
               classes given specified constraints. Schools all around the world
@@ -88,7 +83,7 @@ export default () => (
         </li>
         <li>
           <h3>
-            <img width="220px" height="40px" alt="Tyro logo" src={tyro} />
+            <img height="40px" alt="Tyro logo" src={tyro} />
             <p>
               Alembic provided technical Due Diligence services to ensure both
               software and process quality of a potential acquisition.
@@ -97,12 +92,7 @@ export default () => (
         </li>
         <li>
           <h3>
-            <img
-              width="220px"
-              height="40px"
-              alt="Svenska Alarm logo"
-              src={svenskaAlarm}
-            />
+            <img height="40px" alt="Svenska Alarm logo" src={svenskaAlarm} />
             <p>
               Svenska Alarm needed a new mobile application to provide alarm
               customers with real-time remote control over their alarm systems.
