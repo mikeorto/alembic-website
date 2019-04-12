@@ -13,20 +13,16 @@ module.exports = {
     },
     menulinks: [
       {
+        name: "Home",
+        link: "/",
+      },
+      {
         name: "Work",
         link: "/work",
       },
       {
         name: `Why Alembic`,
         link: `/why-alembic`,
-      },
-      {
-        name: "Careers",
-        link: "/careers",
-      },
-      {
-        name: `Purpose`,
-        link: `/purpose`,
       },
       {
         name: `Team`,
@@ -37,12 +33,16 @@ module.exports = {
         link: `/community`,
       },
       {
-        name: `Contact`,
-        link: `/contact`,
+        name: "Careers",
+        link: "/careers",
       },
       {
         name: `Blog`,
         link: `/blog`,
+      },
+      {
+        name: `Contact`,
+        link: `/contact`,
       },
     ],
   },
