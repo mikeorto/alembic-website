@@ -17,6 +17,10 @@ module.exports = {
         link: "/work",
       },
       {
+        name: `Why Alembic`,
+        link: `/why-alembic`,
+      },
+      {
         name: "Careers",
         link: "/careers",
       },
@@ -31,10 +35,6 @@ module.exports = {
       {
         name: `Community`,
         link: `/community`,
-      },
-      {
-        name: `Technology`,
-        link: `/technology`,
       },
       {
         name: `Contact`,
