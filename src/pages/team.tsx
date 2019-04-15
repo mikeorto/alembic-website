@@ -3,6 +3,8 @@ import { graphql } from "gatsby"
 import Img from "gatsby-image"
 import Layout from "../components/layout/layout"
 import Helmet from "react-helmet"
+import PurposeContent from "../content/main/purpose.mdx"
+
 import "../App.scss"
 
 export default ({
@@ -18,34 +20,46 @@ export default ({
       <Helmet>
         <title>We Are Team Alembic</title>
       </Helmet>
-      <div className="team">
-        <h2>We Are Team Alembic</h2>
-        <ul>
-          {members.map(
-            ({
-              node: {
-                childMdx: { frontmatter },
-              },
-            }: {
-              node: any
-            }) => {
-              const image = images.find(i => i.node.name === frontmatter.id)
-              if (image) {
-                return (
-                  <li key={frontmatter.id}>
-                    <h3>{frontmatter.name}</h3>
-                    <Img
-                      fluid={{
-                        ...image.node.childImageSharp.fluid,
-                        aspectRatio: 3 / 4,
-                      }}
-                    />
-                  </li>
-                )
+
+      <div className="what-we-do wrap">
+        <aside>
+          <PurposeContent />
+        </aside>
+      </div>
+
+      <div className="team wrap">
+        <aside>
+          <h2 className="line">
+            <span>We Are Team Alembic</span>
+          </h2>
+
+          <ul className="stacked">
+            {members.map(
+              ({
+                node: {
+                  childMdx: { frontmatter },
+                },
+              }: {
+                node: any
+              }) => {
+                const image = images.find(i => i.node.name === frontmatter.id)
+                if (image) {
+                  return (
+                    <li key={frontmatter.id}>
+                      <h3>{frontmatter.name}</h3>
+                      <Img
+                        fluid={{
+                          ...image.node.childImageSharp.fluid,
+                          aspectRatio: 3 / 4,
+                        }}
+                      />
+                    </li>
+                  )
+                }
               }
-            }
-          )}
-        </ul>
+            )}
+          </ul>
+        </aside>
       </div>
     </Layout>
   )

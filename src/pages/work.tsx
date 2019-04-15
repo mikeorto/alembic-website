@@ -9,7 +9,6 @@ import suncorp from "../assets/images/case-studies/suncorp.svg"
 import woolworths from "../assets/images/case-studies/woolworths.svg"
 import classSolver from "../assets/images/case-studies/classsolver.svg"
 import expert360 from "../assets/images/case-studies/expert360.svg"
-import tyro from "../assets/images/case-studies/tyro.svg"
 import svenskaAlarm from "../assets/images/case-studies/svenska-alarm-text.svg"
 import tappon from "../assets/images/case-studies/tappon.png"
 import laava from "../assets/images/case-studies/laava.svg"
@@ -28,7 +27,7 @@ export default () => (
           <span>Our Work</span>
         </h2>
 
-        <ul>
+        <ul className="stacked">
           <li>
             <h3>
               <img
@@ -87,10 +86,12 @@ export default () => (
           </li>
           <li>
             <h3>
-              <img height="40px" alt="Tyro logo" src={tyro} />
+              <img height="40px" alt="TappOn logo" src={tappon} />
               <p>
-                Alembic provided technical Due Diligence services to ensure both
-                software and process quality of a potential acquisition.
+                Alembic delivered a rapid prototype of a complex multi-sided
+                marketplace. A deployed and functional SaaS product was
+                delivered in a matter of days and then rapidly iterated on to
+                get the product to market.
               </p>
             </h3>
           </li>

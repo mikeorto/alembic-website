@@ -25,6 +25,7 @@ export default () => (
         </span>
       </h2>
       <ul
+        className="stacked"
         style={{
           filter: "saturate(0%) contrast(50%)",
           marginLeft: "50px",

@@ -5,12 +5,12 @@ import WhatWeDoContent from "../content/main/what-we-do.mdx"
 export default () => (
   <>
     <div className="what-we-do wrap">
-      <aside>
+      <aside className="stacked">
         <WhyAlembicContent />
       </aside>
     </div>
     <div className="what-we-do wrap">
-      <aside>
+      <aside className="stacked">
         <WhatWeDoContent />
       </aside>
     </div>

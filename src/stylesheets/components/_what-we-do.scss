@@ -23,29 +23,6 @@
     }
   }
 
-  ul {
-    @include grid-container();
-    @include grid-collapse();
-    list-style: none;
-
-    li {
-      @include grid-column(4);
-      margin-bottom: 45px;
-      padding-right: 45px;
-
-      @include grid-media($tablet-grid) {
-        @include grid-column(6);
-        padding-right: 20px;
-      }
-
-      @include grid-media($mobile-grid) {
-        @include grid-column(12);
-        padding-right: 0;
-        clear: both;
-      }
-    }
-  }
-
   h3 {
     font-weight: 700;
     font-size: 20px;
@@ -62,10 +39,33 @@
     color: $light-grey;
     padding: 0;
   }
+
+  p,
+  ul {
+    margin-bottom: 35px;
+  }
 }
 
-.case-studies {
-  ul li {
-    // min-height: 350px;
+.stacked ul,
+ul.stacked {
+  @include grid-container();
+  @include grid-collapse();
+  list-style: none;
+
+  li {
+    @include grid-column(4);
+    margin-bottom: 45px;
+    padding-right: 45px;
+
+    @include grid-media($tablet-grid) {
+      @include grid-column(6);
+      padding-right: 20px;
+    }
+
+    @include grid-media($mobile-grid) {
+      @include grid-column(12);
+      padding-right: 0;
+      clear: both;
+    }
   }
 }

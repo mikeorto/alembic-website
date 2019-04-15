@@ -3,7 +3,7 @@ import ServiceOfferingsContent from "../content/main/service-offerings.mdx"
 
 export default () => (
   <div id="what-we-do" className="what-we-do wrap">
-    <aside>
+    <aside className="stacked">
       <ServiceOfferingsContent />
     </aside>
   </div>

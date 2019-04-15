@@ -2,6 +2,7 @@ import React from "react"
 import Layout from "../components/layout/layout"
 import { graphql } from "gatsby"
 import Helmet from "react-helmet"
+
 import "../App.scss"
 
 export default ({ data }: { data: any }) => {
@@ -20,7 +21,7 @@ export default ({ data }: { data: any }) => {
             some of the things we are currently really involved in.
           </p>
         </h2>
-        <ul>
+        <ul className="stacked">
           {data.allFile.edges.map((edge: any, index: number) => (
             <li key={index}>
               <a href={edge.node.childMdx.frontmatter.url}>
