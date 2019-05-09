@@ -10,6 +10,7 @@ import ReactCallout from "../components/react-callout"
 import EnquiryForm from "../components/enquiry-form"
 
 import "../App.scss"
+import { Link } from "gatsby";
 
 export default () => (
   <Layout>

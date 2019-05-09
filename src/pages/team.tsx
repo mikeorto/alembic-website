@@ -4,6 +4,7 @@ import Img from "gatsby-image"
 import Layout from "../components/layout/layout"
 import Helmet from "react-helmet"
 import PurposeContent from "../content/main/purpose.mdx"
+import CallToAction from "../components/call-to-action"
 
 import "../App.scss"
 
@@ -24,9 +25,9 @@ export default ({
       <div className="what-we-do wrap">
         <aside>
           <PurposeContent />
+          <CallToAction action ="Get in touch!" link="/contact"/>
         </aside>
       </div>
-
       <div className="team wrap">
         <aside>
           <h2 className="line">
