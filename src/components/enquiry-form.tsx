@@ -16,6 +16,7 @@ export default () => (
         <option value="" disabled selected>
           Select a budget range
         </option>
+        <option value="Unallocated">Unallocated</option>
         <option value="Less than $10,000">Less than $10,000</option>
         <option value="$10,000 - $50,000">$10,000 - $50,000</option>
         <option value="$50,000 - $100,000">$50,000 - $100,000</option>
