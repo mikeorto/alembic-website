@@ -1,3 +1,4 @@
+
 const description = `A Sydney-based Software Development Consultancy building cutting edge Web and API experiences with Elixir, GraphQL and React.`
 
 module.exports = {
@@ -140,6 +141,21 @@ module.exports = {
           yandex: false,
           windows: false,
         },
+      },
+    },
+    {
+      resolve: `gatsby-plugin-google-tagmanager`,
+      options: {
+        id: "GTM-NVHWBQ4",
+  
+        // Include GTM in development.
+        // Defaults to false meaning GTM will only be loaded in production.
+        includeInDevelopment: true,
+  
+        // Specify optional GTM environment details.
+        // gtmAuth: "YOUR_GOOGLE_TAGMANAGER_ENVIROMENT_AUTH_STRING",
+        // gtmPreview: "YOUR_GOOGLE_TAGMANAGER_ENVIROMENT_PREVIEW_NAME",
+        // dataLayerName: "YOUR_DATA_LAYER_NAME",
       },
     },
   ],

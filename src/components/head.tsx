@@ -14,8 +14,8 @@ export default () => {
   } = useSiteMetadata()
   return (
     <Helmet
-      defaultTitle="Alembic &mdash; Custom Software, Elixir Developers, GraphQL APIs, React UIs"
-      titleTemplate="%s &mdash; Alembic">
+    defaultTitle="Alembic &mdash; Custom Software, Elixir Developers, GraphQL APIs, React UIs"
+    titleTemplate="%s &mdash; Alembic">
       <html lang="en" />
       <meta charSet="utf-8" />
       <meta
