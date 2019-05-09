@@ -7,7 +7,7 @@ import HowWeDoIt from "../components/how-we-do-it"
 import ElixirCallout from "../components/elixir-callout"
 import GraphQLCallout from "../components/graphql-callout"
 import ReactCallout from "../components/react-callout"
-import ContactForm from "../components/contact-form"
+import EnquiryForm from "../components/enquiry-form"
 
 import "../App.scss"
 
@@ -21,6 +21,8 @@ export default () => (
     <ElixirCallout />
     <GraphQLCallout />
     <ReactCallout />
-    <ContactForm />
+    <div className="form" style={{padding: "0px 110px"}}>
+      <EnquiryForm />
+    </div>
   </Layout>
 )

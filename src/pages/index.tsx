@@ -1,22 +1,23 @@
 import React from "react"
-import { graphql } from "gatsby"
 
 import Hero from "../components/hero"
 import Head from "../components/head"
 import ServiceOfferings from "../components/service-offerings"
 import Footer from "../components/footer"
-import ContactForm from "../components/contact-form"
 import Clients from "../components/clients"
+import EnquiryForm from "../components/enquiry-form"
 
 import "../App.scss"
 
 export default () => (
-  <div className="homepage">
+  <div className=" homepage">
     <Head />
-    <Hero />
-    <ServiceOfferings />
-    <Clients />
-    <ContactForm />
+      <Hero />
+      <ServiceOfferings />
+      <Clients />
+    <div className="form" style={{padding: "0px 110px", }} >
+      <EnquiryForm />
+    </div>
     <div className="wrap" style={{ padding: "40px 80px" }}>
       <div className="contact-details">
         <article>
