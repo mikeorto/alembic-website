@@ -18,7 +18,7 @@ export default () => (
     <div className="form" style={{padding: "0px 110px", }} >
       <EnquiryForm />
     </div>
-    <div className="wrap" style={{ padding: "40px 80px" }}>
+    <div className="wrap" style={{ padding: "0px 80px" }}>
       <div className="contact-details">
         <article>
           <h2>
