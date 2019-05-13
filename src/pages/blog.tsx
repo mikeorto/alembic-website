@@ -4,6 +4,7 @@ import { graphql } from "gatsby"
 import Layout from "../components/layout/layout"
 import Article from "../components/article"
 import Helmet from "react-helmet"
+
 export default ({
   data: {
     allFile: { edges },
@@ -29,9 +30,10 @@ export default ({
 
 export const pageQuery = graphql`
   query {
-    allFile(filter: { sourceInstanceName: { eq: "blog" } }) {
+    allFile(filter: { sourceInstanceName: { eq: "blog" } }, sort: { fields: birthTime, order: DESC }) {
       edges {
         node {
+          id
           childMdx {
             excerpt
             frontmatter {
