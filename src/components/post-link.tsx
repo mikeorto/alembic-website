@@ -10,9 +10,8 @@ export default ({ post }: { post: any }) => (
         <p>{post.childMdx.excerpt}</p>
       <p>
         By {post.childMdx.frontmatter.author} &emsp;
-        <em>{post.modifiedTime}</em>
+        <em>{post.childMdx.frontmatter.date}</em>
       </p>
-      {/* <hr /> */}
     </Link>
   </div>
 )

@@ -18,7 +18,7 @@ export default ({
       </Helmet>
       <Article>
         {edges
-          .filter(edge => !!edge.node.modifiedTime)
+          .filter(edge => !!edge.node.childMdx.frontmatter.date)
           .map(edge => (
             <PostLink key={edge.node.id} post={edge.node} />
           ))}
@@ -38,9 +38,9 @@ export const pageQuery = graphql`
               title
               author
               path
+              date(formatString: "Do MMMM YYYY")
             }
           }
-          modifiedTime(formatString: "Do MMMM YYYY")
         }
       }
     }
