@@ -7,7 +7,7 @@ import Helmet from "react-helmet"
 
 export default ({
   data: {
-    allFile: { edges },
+    allMdx: { edges },
   },
 }: {
   data: any
@@ -19,7 +19,7 @@ export default ({
       </Helmet>
       <Article>
         {edges
-          .filter(edge => !!edge.node.childMdx.frontmatter.date)
+          .filter(edge => !!edge.node.frontmatter.date)
           .map(edge => (
             <PostLink key={edge.node.id} post={edge.node} />
           ))}
@@ -30,21 +30,19 @@ export default ({
 
 export const pageQuery = graphql`
   query {
-    allFile(filter: { sourceInstanceName: { eq: "blog" } }, sort: { fields: birthTime, order: DESC }) {
-      edges {
-        node {
-          id
-          childMdx {
-            excerpt
-            frontmatter {
-              title
-              author
-              path
-              date(formatString: "Do MMMM YYYY")
-            }
-          }
+    allMdx(filter: {fileAbsolutePath: {regex: "/blog/"}}, sort: {fields: frontmatter___date, order: DESC}) {
+    edges {
+      node {
+        id
+        excerpt
+        frontmatter {
+          title
+          author
+          path
+          date(formatString: "Do MMMM YYYY")
         }
       }
     }
+  }
   }
 `
