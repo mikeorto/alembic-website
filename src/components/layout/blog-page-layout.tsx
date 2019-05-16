@@ -19,7 +19,7 @@ export default ({
       <title>{frontmatter.title}</title>
     </Helmet>
     <Article>
-      <h2>{frontmatter.title}</h2>
+      <h1>{frontmatter.title}</h1>
       <MDXRenderer>{code.body}</MDXRenderer>
     </Article>
   </Layout>
