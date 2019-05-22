@@ -130,6 +130,10 @@ export default () => (
                 training around Elixir and GraphQL.
               </p>
             </h3>
+            <br />
+            <Link className="btn btn-secondary" to="/case-studies/expert360">
+              Case Study
+            </Link>
           </li>
           <li>
             <h3>
